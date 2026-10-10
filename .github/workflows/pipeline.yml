@@ -23,6 +23,10 @@ on:
         description: "Max DNS/ASN lookups (0 = all)"
         required: false
         default: "0"
+      cdn_limit:
+        description: "Max domains for CDN detection (0 = all)"
+        required: false
+        default: "0"
   schedule:
     - cron: "17 3 * * 0"
 
@@ -76,6 +80,10 @@ jobs:
           python -m scripts.enrich \
             --whois-limit "${{ github.event.inputs.whois_limit || '500' }}" \
             --dns-limit "${{ github.event.inputs.dns_limit || '0' }}"
+
+      - name: Detect CDNs
+        run: |
+          python -m scripts.cdn --limit "${{ github.event.inputs.cdn_limit || '0' }}"
 
       - name: Export deduplicated datasets
         run: python -m scripts.export

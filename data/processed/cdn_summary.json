@@ -1,0 +1,25 @@
+{
+  "total_scanned": 60,
+  "with_cdn": 7,
+  "high_confidence": 7,
+  "by_cdn": {
+    "none": {
+      "total": 53,
+      "high": 0,
+      "low": 0,
+      "none": 53
+    },
+    "arvancloud": {
+      "total": 5,
+      "high": 5,
+      "low": 0,
+      "none": 0
+    },
+    "cloudflare": {
+      "total": 2,
+      "high": 2,
+      "low": 0,
+      "none": 0
+    }
+  }
+}

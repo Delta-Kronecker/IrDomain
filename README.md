@@ -16,9 +16,13 @@ run by Iranian services (e.g. `aparat.com`).
    (Persian text ratio + Iranian tokens such as ZarinPal/eNamad/phone numbers + `lang`).
 3. **enrich** — ASN via local `iptoasn` database (DNS A lookup) and WHOIS
    (`whois.nic.ir` + TLD whois servers via IANA referral) for registrant country.
-4. **export** — deduplicated CSV datasets (`all_domains.csv`, `iranian_domains.csv`,
+4. **cdn** — detect CDN provider for every domain using three signals:
+   CNAME chains (`dnspython`), HTTP header fingerprints (CF-RAY, AkamaiGHost,
+   X-Served-By/Varnish, …) and IP ASN. Output is grouped by CDN with a
+   confidence level (`high` = CNAME or header evidence, `low` = ASN only).
+5. **export** — deduplicated CSV datasets (`all_domains.csv`, `iranian_domains.csv`,
    `non_ir_iranian.csv`, `summary.json`).
-5. **report** — stats and top-scored domains.
+6. **report** — stats and top-scored domains.
 
 ## GitHub Actions
 
@@ -60,10 +64,13 @@ python -m scripts.classify --limit 5000
 # 3) enrichment (ASN + WHOIS)
 python -m scripts.enrich --whois-limit 500
 
-# 4) export deduplicated datasets
+# 4) CDN detection (grouped output files)
+python -m scripts.cdn
+
+# 5) export deduplicated datasets
 python -m scripts.export
 
-# 5) stats
+# 6) stats
 python -m scripts.report
 ```
 
@@ -71,6 +78,9 @@ Outputs:
 
 - `data/processed/seed_domains.csv` — domain list with sources
 - `data/processed/verdicts.csv` — per-domain verdicts
+- `data/processed/domains_by_cdn.csv` — all domains sorted by CDN (cdn, confidence, signals)
+- `data/processed/cdn/<provider>.txt` — high-confidence domains per CDN (e.g. `cloudflare.txt`, `arvancloud.txt`)
+- `data/processed/cdn_summary.json` — per-CDN counts and confidence breakdown
 - `data/processed/all_domains.csv` — full deduplicated dataset
 - `data/processed/iranian_domains.csv` — verdict=iranian, sorted by score
 - `data/processed/non_ir_iranian.csv` — non-`.ir` Iranian candidates

@@ -1,3 +1,4 @@
+import json
 import sqlite3
 from datetime import datetime, timezone
 from typing import Iterable
@@ -41,6 +42,15 @@ CREATE TABLE IF NOT EXISTS enrichment (
   ip                 TEXT,
   asn                TEXT,
   rank_country       REAL,
+  PRIMARY KEY (domain)
+);
+
+CREATE TABLE IF NOT EXISTS cdns (
+  domain       TEXT NOT NULL REFERENCES domains(domain),
+  cdn          TEXT NOT NULL,
+  confidence   TEXT NOT NULL,
+  signals      TEXT,
+  detected_at  TEXT,
   PRIMARY KEY (domain)
 );
 """
@@ -129,6 +139,40 @@ def record_fetch(conn: sqlite3.Connection, domain: str, row: dict) -> None:
         ),
     )
     conn.commit()
+
+
+def record_cdn(conn: sqlite3.Connection, domain: str, row: dict) -> None:
+    conn.execute(
+        """
+        INSERT INTO cdns (domain, cdn, confidence, signals, detected_at)
+        VALUES (?, ?, ?, ?, ?)
+        ON CONFLICT(domain) DO UPDATE SET
+          cdn = excluded.cdn,
+          confidence = excluded.confidence,
+          signals = excluded.signals,
+          detected_at = excluded.detected_at
+        """,
+        (
+            domain,
+            row["cdn"],
+            row["confidence"],
+            json.dumps(row.get("signals", []), ensure_ascii=False),
+            now_iso(),
+        ),
+    )
+    conn.commit()
+
+
+def pending_cdn(conn: sqlite3.Connection, limit: int | None = None) -> list[str]:
+    query = """
+        SELECT d.domain FROM domains d
+        LEFT JOIN cdns c ON c.domain = d.domain
+        WHERE c.domain IS NULL
+        ORDER BY d.is_tld_ir DESC, d.domain
+    """
+    if limit:
+        query += f" LIMIT {int(limit)}"
+    return [row["domain"] for row in conn.execute(query)]
 
 
 def report(conn: sqlite3.Connection) -> dict:
