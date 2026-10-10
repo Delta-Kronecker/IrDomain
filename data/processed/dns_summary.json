@@ -1,9 +1,32 @@
 {
-  "total_scanned": 20,
-  "with_nameservers": 15,
-  "unique_nameservers": 26,
+  "total_scanned": 15,
+  "with_nameservers": 14,
+  "unique_nameservers": 22,
+  "unique_resolver_ips": 25,
+  "unique_isps": 11,
+  "unique_countries": 4,
   "by_provider": {
-    "unknown": 14,
+    "unknown": 11,
+    "parspack": 2,
     "cloudflare": 1
+  },
+  "by_isp": {
+    "CLOUDFLARENET": 6,
+    "BITCOMMAND": 5,
+    "HETZNER-AS": 3,
+    "ASIATECH": 2,
+    "ARVANCLOUD-CDN-": 2,
+    "AFRANET to AS62265 announce AS25184": 2,
+    "SEFROYEKPARDAZENG-AS Sefroyek Pardaz Engineering Company": 1,
+    "AS-GLOBALTELEHOST": 1,
+    "PIO-HOSTING": 1,
+    "WGB-LLC": 1,
+    "PARVASYSTEM": 1
+  },
+  "by_country": {
+    "IR": 9,
+    "US": 7,
+    "AM": 5,
+    "DE": 4
   }
 }

@@ -7,7 +7,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from irdata.enrich import asn, whois
 
 TSV = """\
-1.0.0.0\t1.0.0.255\t13335\tAU\tCloudflare
+1.0.0.0\t1.0.0.255\t13335\tAU\tCloudflare, Inc.
 17.0.0.0\t17.255.255.255\t714\tUS\tApple
 20.0.0.0\t20.0.3.255\t8075\tIR\tMCI
 """
@@ -21,6 +21,7 @@ class AsnDbTests(unittest.TestCase):
         rec = self.db.lookup("20.0.1.5")
         self.assertEqual(rec["asn"], "8075")
         self.assertEqual(rec["country"], "IR")
+        self.assertEqual(rec["name"], "MCI")
 
     def test_lookup_miss(self):
         self.assertIsNone(self.db.lookup("9.9.9.9"))

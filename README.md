@@ -89,7 +89,9 @@ Outputs:
 - `data/processed/cdn_summary.json` — per-CDN counts and confidence breakdown
 - `data/processed/dns_nameservers.txt` — all unique DNS nameservers found (one per line)
 - `data/processed/domains_nameservers.csv` — per-domain NS list with provider guess
-- `data/processed/dns_summary.json` — per-provider NS counts
+- `data/processed/dns_resolver_ips.csv` — NS host → IP with ISP and country (per domain)
+- `data/processed/dns_resolvers_by_ip.csv` — unique resolver IPs with ISP, country, ASN, hit counts
+- `data/processed/dns_summary.json` — provider/ISP/country breakdowns
 - `data/processed/all_domains.csv` — full deduplicated dataset
 - `data/processed/iranian_domains.csv` — verdict=iranian, sorted by score
 - `data/processed/non_ir_iranian.csv` — non-`.ir` Iranian candidates

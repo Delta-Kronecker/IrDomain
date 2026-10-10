@@ -14,11 +14,19 @@ CACHE_PATH = config.RAW_DIR / "ip2asn-v4.tsv.gz"
 
 
 class AsnDB:
-    def __init__(self, starts: list[int], ends: list[int], asns: list[str], countries: list[str]):
+    def __init__(
+        self,
+        starts: list[int],
+        ends: list[int],
+        asns: list[str],
+        countries: list[str],
+        names: list[str] | None = None,
+    ):
         self.starts = starts
         self.ends = ends
         self.asns = asns
         self.countries = countries
+        self.names = names if names is not None else [""] * len(starts)
 
     @classmethod
     def from_tsv_text(cls, text: str) -> "AsnDB":
@@ -26,6 +34,7 @@ class AsnDB:
         ends: list[int] = []
         asns: list[str] = []
         countries: list[str] = []
+        names: list[str] = []
         for line in text.splitlines():
             parts = line.split("\t")
             if len(parts) < 4:
@@ -42,7 +51,8 @@ class AsnDB:
             ends.append(end)
             asns.append(asn)
             countries.append(parts[3])
-        return cls(starts, ends, asns, countries)
+            names.append(parts[4].strip() if len(parts) > 4 else "")
+        return cls(starts, ends, asns, countries, names)
 
     def lookup(self, ip: str) -> dict | None:
         try:
@@ -52,7 +62,12 @@ class AsnDB:
         idx = bisect_left(self.ends, value)
         if idx >= len(self.ends) or self.starts[idx] > value:
             return None
-        return {"ip": ip, "asn": self.asns[idx], "country": self.countries[idx]}
+        return {
+            "ip": ip,
+            "asn": self.asns[idx],
+            "country": self.countries[idx],
+            "name": self.names[idx],
+        }
 
 
 async def load() -> AsnDB:

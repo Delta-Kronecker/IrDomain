@@ -61,6 +61,17 @@ CREATE TABLE IF NOT EXISTS nameservers (
   resolved_at  TEXT,
   PRIMARY KEY (domain)
 );
+
+CREATE TABLE IF NOT EXISTS ns_ips (
+  domain       TEXT NOT NULL,
+  ns_host      TEXT NOT NULL,
+  ip           TEXT NOT NULL,
+  asn          TEXT,
+  isp          TEXT,
+  country      TEXT,
+  detected_at  TEXT,
+  PRIMARY KEY (domain, ns_host, ip)
+);
 """
 
 
@@ -200,6 +211,33 @@ def record_ns(conn: sqlite3.Connection, domain: str, ns_list: list[str], provide
             now_iso(),
         ),
     )
+    conn.commit()
+
+
+def record_ns_ips(conn: sqlite3.Connection, domain: str, rows: list[dict]) -> None:
+    ts = now_iso()
+    conn.execute("DELETE FROM ns_ips WHERE domain = ?", (domain,))
+    for row in rows:
+        conn.execute(
+            """
+            INSERT INTO ns_ips (domain, ns_host, ip, asn, isp, country, detected_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(domain, ns_host, ip) DO UPDATE SET
+              asn = excluded.asn,
+              isp = excluded.isp,
+              country = excluded.country,
+              detected_at = excluded.detected_at
+            """,
+            (
+                domain,
+                row["ns_host"],
+                row["ip"],
+                row.get("asn", ""),
+                row.get("isp", ""),
+                row.get("country", ""),
+                ts,
+            ),
+        )
     conn.commit()
 
 
