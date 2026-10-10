@@ -1,0 +1,20 @@
+# data
+data/raw/
+*.db
+*.sqlite
+
+# logs
+logs/
+
+# env / secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# editors
+.vscode/
+.idea/
