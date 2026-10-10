@@ -53,6 +53,14 @@ CREATE TABLE IF NOT EXISTS cdns (
   detected_at  TEXT,
   PRIMARY KEY (domain)
 );
+
+CREATE TABLE IF NOT EXISTS nameservers (
+  domain       TEXT NOT NULL REFERENCES domains(domain),
+  ns_list      TEXT,
+  provider     TEXT,
+  resolved_at  TEXT,
+  PRIMARY KEY (domain)
+);
 """
 
 
@@ -168,6 +176,38 @@ def pending_cdn(conn: sqlite3.Connection, limit: int | None = None) -> list[str]
         SELECT d.domain FROM domains d
         LEFT JOIN cdns c ON c.domain = d.domain
         WHERE c.domain IS NULL
+        ORDER BY d.is_tld_ir DESC, d.domain
+    """
+    if limit:
+        query += f" LIMIT {int(limit)}"
+    return [row["domain"] for row in conn.execute(query)]
+
+
+def record_ns(conn: sqlite3.Connection, domain: str, ns_list: list[str], provider: str) -> None:
+    conn.execute(
+        """
+        INSERT INTO nameservers (domain, ns_list, provider, resolved_at)
+        VALUES (?, ?, ?, ?)
+        ON CONFLICT(domain) DO UPDATE SET
+          ns_list = excluded.ns_list,
+          provider = excluded.provider,
+          resolved_at = excluded.resolved_at
+        """,
+        (
+            domain,
+            json.dumps(ns_list, ensure_ascii=False),
+            provider,
+            now_iso(),
+        ),
+    )
+    conn.commit()
+
+
+def pending_ns(conn: sqlite3.Connection, limit: int | None = None) -> list[str]:
+    query = """
+        SELECT d.domain FROM domains d
+        LEFT JOIN nameservers n ON n.domain = d.domain
+        WHERE n.domain IS NULL
         ORDER BY d.is_tld_ir DESC, d.domain
     """
     if limit:

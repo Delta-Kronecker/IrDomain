@@ -1,0 +1,9 @@
+{
+  "total_scanned": 20,
+  "with_nameservers": 15,
+  "unique_nameservers": 26,
+  "by_provider": {
+    "unknown": 14,
+    "cloudflare": 1
+  }
+}

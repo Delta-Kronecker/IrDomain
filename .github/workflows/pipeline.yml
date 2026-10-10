@@ -27,6 +27,10 @@ on:
         description: "Max domains for CDN detection (0 = all)"
         required: false
         default: "0"
+      ns_limit:
+        description: "Max domains for DNS name-server resolution (0 = all)"
+        required: false
+        default: "0"
   schedule:
     - cron: "17 3 * * 0"
 
@@ -84,6 +88,10 @@ jobs:
       - name: Detect CDNs
         run: |
           python -m scripts.cdn --limit "${{ github.event.inputs.cdn_limit || '0' }}"
+
+      - name: Resolve DNS name servers
+        run: |
+          python -m scripts.dns --limit "${{ github.event.inputs.ns_limit || '0' }}"
 
       - name: Export deduplicated datasets
         run: python -m scripts.export
