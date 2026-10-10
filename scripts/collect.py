@@ -8,7 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from irdata import config
-from irdata.collectors import commoncrawl, crtsh, lists, radar, tranco
+from irdata.collectors import commoncrawl, crtsh, lists, majestic, radar, tranco
 from irdata.storage import db
 
 logging.basicConfig(
@@ -22,6 +22,7 @@ COLLECTORS = {
     "commoncrawl": commoncrawl.collect,
     "tranco": tranco.collect,
     "lists": lists.collect,
+    "majestic": majestic.collect,
     "radar": radar.collect,
 }
 

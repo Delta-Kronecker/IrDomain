@@ -6,14 +6,29 @@ run by Iranian services (e.g. `aparat.com`).
 ## Pipeline
 
 1. **collect** — build a seed domain list from public sources:
-   - Certificate Transparency (`crt.sh`, query `%.ir`)
-   - Common Crawl index (`*.ir`, latest crawls)
+   - Certificate Transparency (`crt.sh`, chunked per-prefix queries `a%.ir` … `*%.ir`)
+   - Common Crawl index (`*.ir`, latest crawls, stride-sampled pages)
    - Tranco top list (`.ir` filter)
+   - Majestic Million (`.ir` filter)
    - Curated GitHub domain lists (Iran-hosted domains)
    - Cloudflare Radar top domains by country `IR` (optional, needs API token)
 2. **classify** — fetch every homepage and score how Iranian it is
    (Persian text ratio + Iranian tokens such as ZarinPal/eNamad/phone numbers + `lang`).
-3. **report** — stats and top-scored domains.
+3. **enrich** — ASN via local `iptoasn` database (DNS A lookup) and WHOIS
+   (`whois.nic.ir` + TLD whois servers via IANA referral) for registrant country.
+4. **export** — deduplicated CSV datasets (`all_domains.csv`, `iranian_domains.csv`,
+   `non_ir_iranian.csv`, `summary.json`).
+5. **report** — stats and top-scored domains.
+
+## GitHub Actions
+
+`.github/workflows/pipeline.yml` runs the whole pipeline on a weekly schedule or
+manually (`workflow_dispatch`) with configurable inputs (sources, page limits,
+classification/WHOIS limits). The runner commits `data/processed/` back to the
+repository and uploads artifacts. Raw collector caches and the SQLite database are
+cached between runs for incremental progress.
+
+Optional secret: `RADAR_API_TOKEN` (free Cloudflare Radar API token).
 
 ## Setup
 
@@ -42,7 +57,13 @@ python -m scripts.collect --sources tranco,lists
 # 2) classification (homepage fetch + scoring)
 python -m scripts.classify --limit 5000
 
-# 3) stats
+# 3) enrichment (ASN + WHOIS)
+python -m scripts.enrich --whois-limit 500
+
+# 4) export deduplicated datasets
+python -m scripts.export
+
+# 5) stats
 python -m scripts.report
 ```
 
@@ -50,7 +71,11 @@ Outputs:
 
 - `data/processed/seed_domains.csv` — domain list with sources
 - `data/processed/verdicts.csv` — per-domain verdicts
-- `data/irdata.sqlite` — main database (`domains`, `sources`, `fetches`)
+- `data/processed/all_domains.csv` — full deduplicated dataset
+- `data/processed/iranian_domains.csv` — verdict=iranian, sorted by score
+- `data/processed/non_ir_iranian.csv` — non-`.ir` Iranian candidates
+- `data/processed/summary.json` — export counters
+- `data/irdata.sqlite` — main database (`domains`, `sources`, `fetches`, `enrichment`)
 
 ## Tests
 

@@ -1,0 +1,106 @@
+name: pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: "Comma-separated collectors"
+        required: false
+        default: "crtsh,commoncrawl,tranco,lists,majestic,radar"
+      cc_max_pages:
+        description: "Common Crawl pages per index"
+        required: false
+        default: "40"
+      classify_limit:
+        description: "Max domains to classify (0 = all pending)"
+        required: false
+        default: "0"
+      whois_limit:
+        description: "Max WHOIS lookups"
+        required: false
+        default: "500"
+      dns_limit:
+        description: "Max DNS/ASN lookups (0 = all)"
+        required: false
+        default: "0"
+  schedule:
+    - cron: "17 3 * * 0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Cache raw files and database
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/raw
+            data/irdata.sqlite
+          key: irdata-${{ github.run_id }}
+          restore-keys: |
+            irdata-
+
+      - name: Collect seed domains
+        env:
+          RADAR_API_TOKEN: ${{ secrets.RADAR_API_TOKEN }}
+        run: |
+          python -m scripts.collect \
+            --sources "${{ github.event.inputs.sources || 'crtsh,commoncrawl,tranco,lists,majestic,radar' }}" \
+            --cc-max-pages "${{ github.event.inputs.cc_max_pages || '40' }}"
+
+      - name: Classify domains
+        run: |
+          LIMIT="${{ github.event.inputs.classify_limit || '0' }}"
+          if [ "$LIMIT" = "0" ]; then LIMIT=100000000; fi
+          python -m scripts.classify --limit "$LIMIT"
+
+      - name: Enrich (ASN + WHOIS)
+        run: |
+          python -m scripts.enrich \
+            --whois-limit "${{ github.event.inputs.whois_limit || '500' }}" \
+            --dns-limit "${{ github.event.inputs.dns_limit || '0' }}"
+
+      - name: Export deduplicated datasets
+        run: python -m scripts.export
+
+      - name: Generate report
+        run: python -m scripts.report > data/processed/report.txt 2>&1 || true
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed
+          if git diff --cached --quiet; then
+            echo "No dataset changes to commit"
+            exit 0
+          fi
+          git commit -m "data: automated pipeline run $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: processed-data
+          path: |
+            data/processed/
+            logs/
+          if-no-files-found: ignore
