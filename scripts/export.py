@@ -79,6 +79,19 @@ def main() -> None:
     (out / "summary.json").write_text(
         json.dumps(summary, indent=2), encoding="utf-8"
     )
+
+    sub_rows = conn.execute(
+        "SELECT host, parent FROM subdomains ORDER BY host"
+    ).fetchall()
+    with (out / "subdomains.csv").open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.writer(fh)
+        writer.writerow(["host", "parent_domain"])
+        for row in sub_rows:
+            writer.writerow([row["host"], row["parent"]])
+    summary["subdomains"] = len(sub_rows)
+    (out / "summary.json").write_text(
+        json.dumps(summary, indent=2), encoding="utf-8"
+    )
     log.info("export summary: %s", summary)
     conn.close()
 

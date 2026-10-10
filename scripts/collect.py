@@ -27,21 +27,32 @@ COLLECTORS = {
 }
 
 
-async def run(sources: list[str], commoncrawl_kwargs: dict | None = None) -> dict[str, set[str]]:
+async def run(
+    sources: list[str],
+    commoncrawl_kwargs: dict | None = None,
+    crtsh_seeds: list[str] | None = None,
+    crtsh_limit: int = 500,
+) -> tuple[dict[str, set[str]], set[str]]:
     results: dict[str, set[str]] = {}
+    subdomain_hosts: set[str] = set()
     for name in sources:
-        collector = COLLECTORS[name]
-        if name == "commoncrawl" and commoncrawl_kwargs:
-            collector = lambda: commoncrawl.collect(**commoncrawl_kwargs)
         log.info("starting collector: %s", name)
         try:
-            domains = await collector()
+            if name == "crtsh":
+                domains, hosts = await crtsh.collect(
+                    crtsh_seeds or [], limit=crtsh_limit
+                )
+                subdomain_hosts |= hosts
+            elif name == "commoncrawl" and commoncrawl_kwargs:
+                domains = await commoncrawl.collect(**commoncrawl_kwargs)
+            else:
+                domains = await COLLECTORS[name]()
         except Exception:
             log.exception("collector failed: %s", name)
             domains = set()
         log.info("collector %s returned %d domains", name, len(domains))
         results[name] = domains
-    return results
+    return results, subdomain_hosts
 
 
 def main() -> None:
@@ -54,6 +65,7 @@ def main() -> None:
     parser.add_argument("--out", default=str(config.PROCESSED_DIR / "seed_domains.csv"))
     parser.add_argument("--cc-index-count", type=int, default=2)
     parser.add_argument("--cc-max-pages", type=int, default=40)
+    parser.add_argument("--crtsh-limit", type=int, default=500)
     args = parser.parse_args()
 
     sources = [s.strip() for s in args.sources.split(",") if s.strip()]
@@ -61,16 +73,25 @@ def main() -> None:
     if unknown:
         parser.error(f"unknown sources: {unknown}")
 
-    results = asyncio.run(
+    conn = db.connect()
+    crtsh_seeds = (
+        db.expand_seeds(conn, args.crtsh_limit) if "crtsh" in sources else []
+    )
+
+    results, subdomain_hosts = asyncio.run(
         run(
             sources,
             {"index_count": args.cc_index_count, "max_pages": args.cc_max_pages},
+            crtsh_seeds=crtsh_seeds,
+            crtsh_limit=args.crtsh_limit,
         )
     )
 
-    conn = db.connect()
     for source, domains in results.items():
         db.upsert_domains(conn, domains, source)
+    if subdomain_hosts:
+        inserted = db.insert_subdomains(conn, subdomain_hosts)
+        log.info("subdomains table: +%d rows", inserted)
 
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)

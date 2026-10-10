@@ -10,84 +10,105 @@ from irdata.utils.net import fetch_text, make_client
 log = logging.getLogger(__name__)
 
 URL = "https://crt.sh/"
-PREFIXES = [f"{c}%" for c in "abcdefghijklmnopqrstuvwxyz0123456789"] + ["*%"]
-CHUNK_DELAY = 15.0
+EXPAND_DIR = config.RAW_DIR / "crtsh_expand"
+SUBDOMAINS_OUT = config.RAW_DIR / "crtsh_subdomains.txt"
+DELAY_BETWEEN = 2.0
 
 
-def _cache_path(index: int, prefix: str) -> Path:
-    slug = prefix.replace("%", "").replace("*", "star") or "empty"
-    return config.RAW_DIR / f"crtsh_{index:02d}_{slug}.domains.txt"
+def _cache_path(domain: str) -> Path:
+    return EXPAND_DIR / f"{domain}.json"
 
 
-def _parse_rows(rows) -> set[str]:
-    domains: set[str] = set()
-    for row in rows:
-        for name in str(row.get("name_value", "")).splitlines():
-            host = normalize_domain(name)
-            if host is None:
-                continue
-            reg = registrable_domain(host)
-            if reg:
-                domains.add(reg)
-    return domains
-
-
-async def _fetch_chunk(client, query: str) -> str | None:
+async def _fetch_subdomains(client, domain: str) -> list[str] | None:
     for attempt in range(5):
         try:
-            return await fetch_text(
+            text = await fetch_text(
                 client,
                 URL,
-                params={"q": query, "output": "json"},
+                params={
+                    "q": f"%.{domain}",
+                    "output": "json",
+                    "exclude": "expired",
+                },
                 retries=1,
-                timeout=300.0,
+                timeout=120.0,
             )
         except Exception as exc:
             status = getattr(getattr(exc, "response", None), "status_code", None)
             if status == 429:
                 wait = 120.0 * (attempt + 1)
-            elif status in (500, 502, 503, 504):
-                wait = 60.0
             else:
-                wait = 20.0
-            log.warning("crt.sh chunk %s failed (status=%s), wait %.0fs", query, status, wait)
+                wait = 60.0
+            log.warning("crt.sh %s failed (status=%s), wait %.0fs", domain, status, wait)
             await asyncio.sleep(wait)
+            continue
+        try:
+            rows = json.loads(text)
+        except json.JSONDecodeError:
+            log.warning("crt.sh %s returned non-JSON (%d bytes)", domain, len(text))
+            await asyncio.sleep(30.0)
+            continue
+        hosts: set[str] = set()
+        for row in rows:
+            for name in str(row.get("name_value", "")).splitlines():
+                host = normalize_domain(name)
+                if host:
+                    hosts.add(host)
+        return sorted(hosts)
     return None
 
 
-async def collect() -> set[str]:
-    domains: set[str] = set()
+async def collect(
+    seed_domains: list[str], limit: int = 500
+) -> tuple[set[str], set[str]]:
+    EXPAND_DIR.mkdir(parents=True, exist_ok=True)
+    registrable: set[str] = set()
+    all_hosts: set[str] = set()
+    if not seed_domains:
+        return registrable, all_hosts
     async with make_client(
         headers={"User-Agent": config.BROWSER_USER_AGENT},
-        timeout=300.0,
+        timeout=120.0,
     ) as client:
-        for index, prefix in enumerate(PREFIXES):
-            cache = _cache_path(index, prefix)
+        done = 0
+        for domain in seed_domains:
+            if done >= limit:
+                break
+            cache = _cache_path(domain)
             if cache.exists():
-                domains.update(
-                    line.strip()
-                    for line in cache.read_text(encoding="utf-8").splitlines()
-                    if line.strip()
+                try:
+                    hosts = json.loads(cache.read_text(encoding="utf-8"))
+                except json.JSONDecodeError:
+                    hosts = None
+                    cache.unlink(missing_ok=True)
+                if hosts is None:
+                    hosts = await _fetch_subdomains(client, domain)
+                    if hosts is None:
+                        continue
+                    cache.write_text(json.dumps(hosts), encoding="utf-8")
+                    await asyncio.sleep(DELAY_BETWEEN)
+            else:
+                hosts = await _fetch_subdomains(client, domain)
+                if hosts is None:
+                    continue
+                cache.write_text(json.dumps(hosts), encoding="utf-8")
+                await asyncio.sleep(DELAY_BETWEEN)
+            done += 1
+            for host in hosts:
+                all_hosts.add(host)
+                reg = registrable_domain(host)
+                if reg:
+                    registrable.add(reg)
+            if done % 25 == 0:
+                log.info(
+                    "crt.sh expand: %d/%d domains, %d hosts",
+                    done, limit, len(all_hosts),
                 )
-                continue
-            text = await _fetch_chunk(client, prefix + ".ir")
-            if text is None:
-                log.warning("giving up chunk %s", prefix)
-                continue
-            try:
-                rows = json.loads(text)
-            except json.JSONDecodeError:
-                log.warning("chunk %s returned non-JSON (%d bytes)", prefix, len(text))
-                await asyncio.sleep(60.0)
-                continue
-            chunk_domains = _parse_rows(rows)
-            cache.write_text(
-                "\n".join(sorted(chunk_domains)) + ("\n" if chunk_domains else ""),
-                encoding="utf-8",
-            )
-            domains.update(chunk_domains)
-            log.info(
-                "chunk %s: %d domains (total %d)", prefix, len(chunk_domains), len(domains)
-            )
-            await asyncio.sleep(CHUNK_DELAY)
-    return domains
+    SUBDOMAINS_OUT.write_text(
+        "\n".join(sorted(all_hosts)) + ("\n" if all_hosts else ""),
+        encoding="utf-8",
+    )
+    log.info(
+        "crt.sh expand done: %d domains, %d hosts", done, len(all_hosts)
+    )
+    return registrable, all_hosts

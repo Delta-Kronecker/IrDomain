@@ -1,7 +1,7 @@
 domain,is_tld_ir,sources
 0-1.ir,1,commoncrawl;majestic;tranco
 0-21.ir,1,commoncrawl
-0000.ir,1,commoncrawl
+0000.ir,1,commoncrawl;crtsh
 00000000.ir,1,commoncrawl
 000001.ir,1,commoncrawl
 00080.ir,1,commoncrawl

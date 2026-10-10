@@ -72,6 +72,12 @@ CREATE TABLE IF NOT EXISTS ns_ips (
   detected_at  TEXT,
   PRIMARY KEY (domain, ns_host, ip)
 );
+
+CREATE TABLE IF NOT EXISTS subdomains (
+  host         TEXT NOT NULL PRIMARY KEY,
+  parent       TEXT,
+  first_seen   TEXT
+);
 """
 
 
@@ -251,6 +257,37 @@ def pending_ns(conn: sqlite3.Connection, limit: int | None = None) -> list[str]:
     if limit:
         query += f" LIMIT {int(limit)}"
     return [row["domain"] for row in conn.execute(query)]
+
+
+def expand_seeds(conn: sqlite3.Connection, limit: int) -> list[str]:
+    query = """
+        SELECT d.domain FROM domains d
+        LEFT JOIN fetches f ON f.domain = d.domain
+        ORDER BY (f.verdict = 'iranian') DESC, d.is_tld_ir ASC, d.domain
+    """
+    if limit:
+        query += f" LIMIT {int(limit)}"
+    return [row["domain"] for row in conn.execute(query)]
+
+
+def insert_subdomains(conn: sqlite3.Connection, hosts: Iterable[str]) -> int:
+    from irdata.utils.domain import registrable_domain
+
+    ts = now_iso()
+    count = 0
+    for host in hosts:
+        parent = registrable_domain(host)
+        conn.execute(
+            """
+            INSERT INTO subdomains (host, parent, first_seen)
+            VALUES (?, ?, ?)
+            ON CONFLICT(host) DO NOTHING
+            """,
+            (host, parent, ts),
+        )
+        count += 1
+    conn.commit()
+    return count
 
 
 def report(conn: sqlite3.Connection) -> dict:

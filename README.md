@@ -6,7 +6,10 @@ run by Iranian services (e.g. `aparat.com`).
 ## Pipeline
 
 1. **collect** — build a seed domain list from public sources:
-   - Certificate Transparency (`crt.sh`, chunked per-prefix queries `a%.ir` … `*%.ir`)
+   - Certificate Transparency (`crt.sh`): per-domain subdomain expansion
+     (`%.domain` queries with `exclude=expired`); results feed a dedicated
+     `subdomains` table. TLD-wide `%.ir` queries are not usable (crt.sh rejects
+     mid-pattern `%` and the full suffix query returns 502).
    - Common Crawl index (`*.ir`, latest crawls, stride-sampled pages)
    - Tranco top list (`.ir` filter)
    - Majestic Million (`.ir` filter)

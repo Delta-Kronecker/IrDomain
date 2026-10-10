@@ -11,6 +11,10 @@ on:
         description: "Common Crawl pages per index"
         required: false
         default: "40"
+      crtsh_limit:
+        description: "Domains to expand via crt.sh subdomain queries"
+        required: false
+        default: "500"
       classify_limit:
         description: "Max domains to classify (0 = all pending)"
         required: false
@@ -71,7 +75,8 @@ jobs:
         run: |
           python -m scripts.collect \
             --sources "${{ github.event.inputs.sources || 'crtsh,commoncrawl,tranco,lists,majestic,radar' }}" \
-            --cc-max-pages "${{ github.event.inputs.cc_max_pages || '40' }}"
+            --cc-max-pages "${{ github.event.inputs.cc_max_pages || '40' }}" \
+            --crtsh-limit "${{ github.event.inputs.crtsh_limit || '500' }}"
 
       - name: Classify domains
         run: |
