@@ -1,23 +1,47 @@
 {
-  "total_scanned": 60,
-  "with_cdn": 7,
-  "high_confidence": 7,
+  "total_scanned": 4389,
+  "with_cdn": 646,
+  "high_confidence": 633,
   "by_cdn": {
     "none": {
-      "total": 53,
+      "total": 3743,
       "high": 0,
       "low": 0,
-      "none": 53
+      "none": 3743
     },
     "arvancloud": {
-      "total": 5,
-      "high": 5,
+      "total": 507,
+      "high": 507,
       "low": 0,
       "none": 0
     },
     "cloudflare": {
+      "total": 120,
+      "high": 107,
+      "low": 13,
+      "none": 0
+    },
+    "cdn77": {
+      "total": 15,
+      "high": 15,
+      "low": 0,
+      "none": 0
+    },
+    "fastly": {
       "total": 2,
       "high": 2,
+      "low": 0,
+      "none": 0
+    },
+    "akamai": {
+      "total": 1,
+      "high": 1,
+      "low": 0,
+      "none": 0
+    },
+    "bunnycdn": {
+      "total": 1,
+      "high": 1,
       "low": 0,
       "none": 0
     }
