@@ -36,6 +36,25 @@ WEAK_TOKENS = [
     "ایران",
     "فارسی",
 ]
+PARKED_PATTERNS = [
+    "domain for sale",
+    "domain is for sale",
+    "this domain is for sale",
+    "this domain may be for sale",
+    "buy this domain",
+    "domain parking",
+    "domain parking page",
+    "parked free",
+    "has been parked",
+    "is parked",
+    "domainmarket",
+    "afternic",
+    "sedo.com",
+    "dan.com",
+    "این دامنه برای فروش",
+    "دامنه برای فروش",
+    "فروش دامنه",
+]
 
 
 def strip_html(html: str) -> str:
@@ -89,6 +108,11 @@ def token_hits(html: str) -> list[str]:
     return hits
 
 
+def parked(html: str) -> bool:
+    haystack = html.lower()
+    return any(pattern in haystack for pattern in PARKED_PATTERNS)
+
+
 def extract(html: str) -> dict:
     html = html_module.unescape(html)
     visible = strip_html(html)
@@ -98,4 +122,5 @@ def extract(html: str) -> dict:
         "lang": detect_lang(html),
         "title": detect_title(html),
         "token_hits": hits,
+        "parked": parked(html),
     }

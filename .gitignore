@@ -2,6 +2,7 @@
 data/raw/
 *.db
 *.sqlite
+!data/irdata.sqlite
 
 # logs
 logs/

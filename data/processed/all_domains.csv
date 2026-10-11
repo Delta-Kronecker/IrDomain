@@ -1,44 +1,571 @@
 domain,is_tld_ir,sources,verdict,ir_score,persian_ratio,title,registrant_country,asn
-0-1.ir,1,majestic;tranco,iranian,0.78,0.9791,صفرویک – خرید اینترنت، هاست، دامنه و سرور,IR,44285
+0-1.ir,1,commoncrawl;majestic;tranco,iranian,0.78,0.9791,صفرویک – خرید اینترنت، هاست، دامنه و سرور,IR,44285
+0-21.ir,1,commoncrawl,foreign,0.0375,0.0,IIS Windows Server,DE,24940
+0000.ir,1,commoncrawl;crtsh,foreign,0.0375,0.0,,IR,215708
+00000000.ir,1,commoncrawl,dead,,,,,
+000001.ir,1,commoncrawl,iranian,0.6675,0.9866,حسابداران نسل نو,IR,60631
+00080.ir,1,commoncrawl,iranian,0.715,0.9856,بررسی امنیتی,IR,43754
+00098.ir,1,commoncrawl,iranian,0.6,0.9198,سه صفر 98,IR,205585
 000webhost.ir,1,tranco,dead,,,,,
+0011.ir,1,commoncrawl,iranian,0.6,1.0,.:: دیجی کلینیک ::. تعمیرات انواع کالای دیجیتال - ورود به پنل,IR,47376
+00397.ir,1,commoncrawl,iranian,0.7,1.0,به زبان آدمیزاد - مهدی شریفی راد,IR,60631
+00961.ir,1,commoncrawl,foreign,0.0375,0.0,&#1582;&#1585;&#1740;&#1583; &#1585;&#1605;&#1586; &#1588;&#1575;&#1585;&#1688; &#1575;&#1662;&#1585;&#1575;&#1578;&#1608;&#1585;&#1607;&#1575;&#1740; &#1605;&#1608;&#1576;&#1575;&#1740;&#1604; &#1593;&#1585;&#1575;&#1602;,IR,25184
+00962.ir,1,commoncrawl,uncertain,0.4074,0.1404,&#1588;&#1575;&#1585;&#1688; &#1586;&#1740;&#1606;,IR,25184
+00964.ir,1,commoncrawl,foreign,0.0375,0.0,&#1583;&#1587;&#1578;&#1600;&#1585;&#1587;&#1600;&#1740; &#1605;&#1581;&#1600;&#1583;&#1608;&#1583;,,
+00965.ir,1,commoncrawl,foreign,0.0375,0.0,&#1582;&#1585;&#1740;&#1583; &#1588;&#1575;&#1585;&#1688; &#1593;&#1585;&#1575;&#1602;&#1740;,,
+00f.ir,1,commoncrawl,iranian,0.7,1.0,پیدا,,
 00v.ir,1,tranco,dead,,,,,
-0201001.ir,1,tranco,iranian,0.6325,0.9875,صفر بیست هزار و یک,IR,49972
+00x.ir,1,commoncrawl,iranian,0.6375,0.8929,این دامنه میتواند فروشی باشد,,
+0100.ir,1,commoncrawl,iranian,0.78,1.0,صفرصد | سوپر اپلیکیشن صنعت ساختمان,,
+01000.ir,1,commoncrawl,iranian,0.765,1.0,صفر و یک,,
+0101010101.ir,1,commoncrawl,dead,,,,,
+0141.ir,1,commoncrawl,iranian,0.6,0.968,,,
+0173155.ir,1,commoncrawl,iranian,0.845,0.9528,صفحه اصلی -,,
+01cd.ir,1,commoncrawl,foreign,0.15,0.0,::01cd.ir::,,
+01d.ir,1,commoncrawl,iranian,0.715,0.928,صفر و یک دولوپر,,
+01it.ir,1,commoncrawl,iranian,0.88,0.5041,صفرویک - بزرگترین فروشگاه لپ تاپ استوک,,
+01kar.ir,1,commoncrawl,iranian,0.765,0.9052,سایت آگهی کسب و کار ديجيتال,,
+01sib.ir,1,commoncrawl,iranian,0.7,0.9878,سیستم خدمات الکترونیک شهر,,
+01soft.ir,1,commoncrawl,iranian,0.765,0.9888,0 و 1,,
+0201001.ir,1,commoncrawl;tranco,iranian,0.6325,0.9875,صفر بیست هزار و یک,IR,49972
+021-79165.ir,1,commoncrawl,iranian,0.815,0.9598,"اخذ گواهینامه ایزو ISO , HSE , IMS , CE فوری و ارزان رتبه انفورماتیک پیمانکاری آموزشی",,
+021021.ir,1,commoncrawl,iranian,0.6675,0.9903,فروشگاه اینترنتی کندو | سوپرمارکت آنلاین | سوپرمارکت اینترنتی,,
+021ketab.ir,1,commoncrawl,foreign,0.0375,0.0,&#1605;&#1580;&#1605;&#1608;&#1593;&#1607; &#1705;&#1578;&#1575;&#1576;&#1607;&#1575;&#1740; &#1578;&#1593;&#1604;&#1740;&#1605; &#1608; &#1578;&#1585;&#1576;&#1740;&#1578; &#1576;&#1606;&#1740;&#1575;&#1583;&#1740;&#1606;,,
+021khayati.ir,1,commoncrawl,uncertain,0.55,0.6097,سایت خبری 021khayati.ir,,
+021tehran.ir,1,commoncrawl,foreign,0.1652,0.0001,021 تهران بهترین سایت تبلیغات در تهران,,
+022.ir,1,commoncrawl,uncertain,0.55,0.3042,,,
+024kala.ir,1,commoncrawl,iranian,0.865,0.9168,024 کالا | فروشگاه تخفیف های ویژه,,
+0272.ir,1,commoncrawl,iranian,0.765,0.783,خرید دامنه 0272.ir | این دامنه ممکن است برای فروش باشد,,
+0280.ir,1,commoncrawl,iranian,0.765,0.783,خرید دامنه 0280.ir | این دامنه ممکن است برای فروش باشد,,
+02l.ir,1,commoncrawl,uncertain,0.55,0.3006,,,
+034payam.ir,1,commoncrawl,uncertain,0.526,0.2869,,,
+03535.ir,1,commoncrawl,iranian,0.7,0.9194,صفحه اصلی,,
+0439.ir,1,commoncrawl,iranian,0.6,0.968,,,
+0444.ir,1,commoncrawl,iranian,0.7,0.8886,اینترنت پارسی نت لارستان,,
+0451.ir,1,commoncrawl,iranian,0.6,1.0,این دامنه واگذار میشود,,
+0528shop.ir,1,commoncrawl,iranian,0.75,0.8429,maintenance &#8211; دموی اکومال,,
+0534.ir,1,commoncrawl,iranian,0.765,0.783,خرید دامنه 0534.ir | این دامنه ممکن است برای فروش باشد,,
 05kids.ir,1,tranco,dead,,,,,
-0game.ir,1,tranco,iranian,0.8,0.7603,0GAME - دانلود بهترین بازی های قدیمی و خاطره انگیز,IR,212216
-1000264.ir,1,tranco,iranian,0.6025,0.9933,یک میلیون و دویست و شصت و چهار,DE,24940
-110host.ir,1,majestic,dead,,,,IR,201999
-1122.ir,1,tranco,iranian,0.6,0.3049,Domain For Sale - Domain Parking,IR,58262
+061market.ir,1,commoncrawl,foreign,0.2143,0.0078,۰۶۱ مارکت,,
+0663.ir,1,commoncrawl,foreign,0.0375,0.0,,,
+07132319001.ir,1,commoncrawl,iranian,0.815,0.9966,به سامانه پیامک هوشمند خوش آمدید v10.0.0,,
+0761.ir,1,commoncrawl,,,,,,
+077.ir,1,commoncrawl,,,,,,
+07shop.ir,1,commoncrawl,,,,,,
+0825.ir,1,commoncrawl,,,,,,
+0837.ir,1,commoncrawl,,,,,,
+09117400518.ir,1,commoncrawl,,,,,,
+09119171500.ir,1,commoncrawl,,,,,,
+09121000520.ir,1,commoncrawl,,,,,,
+09122108011.ir,1,commoncrawl,,,,,,
+09125770085.ir,1,commoncrawl,,,,,,
+0912sim.ir,1,commoncrawl,,,,,,
+09131130224.ir,1,commoncrawl,,,,,,
+09195165452.ir,1,commoncrawl,,,,,,
+0920fazelab.ir,1,commoncrawl,,,,,,
+09332121001.ir,1,commoncrawl,,,,,,
+09629.ir,1,commoncrawl,,,,,,
+0cd.ir,1,commoncrawl,,,,,,
+0f0.ir,1,commoncrawl,,,,,,
+0game.ir,1,commoncrawl;tranco,iranian,0.8,0.7603,0GAME - دانلود بهترین بازی های قدیمی و خاطره انگیز,IR,212216
+0mid.ir,1,commoncrawl,,,,,,
+0nlysms.ir,1,commoncrawl,,,,,,
+0panel.ir,1,commoncrawl,,,,,,
+0pt.ir,1,commoncrawl,,,,,,
+0seo.ir,1,commoncrawl,,,,,,
+0ta100group.ir,1,commoncrawl,,,,,,
+0ta100holding.ir,1,commoncrawl,,,,,,
+0web.ir,1,commoncrawl,,,,,,
+0zx.ir,1,commoncrawl,,,,,,
+1-20.ir,1,commoncrawl,,,,,,
+1-hadiye.ir,1,commoncrawl,,,,,,
+1-kharid.ir,1,commoncrawl,,,,,,
+1000264.ir,1,commoncrawl;tranco,iranian,0.6025,0.9933,یک میلیون و دویست و شصت و چهار,DE,24940
+10002995.ir,1,commoncrawl,,,,,,
+1000707.ir,1,commoncrawl,,,,,,
+1000bagh.ir,1,commoncrawl,,,,,,
+1000bar.ir,1,commoncrawl,,,,,,
+1000idea.ir,1,commoncrawl,,,,,,
+1000jobs.ir,1,commoncrawl,,,,,,
+1000sanaat.ir,1,commoncrawl,,,,,,
+1000site.ir,1,commoncrawl,,,,,,
+1000sms.ir,1,commoncrawl,,,,,,
+1000so.ir,1,commoncrawl,,,,,,
+1001home.ir,1,commoncrawl,,,,,,
+1001nights.ir,1,commoncrawl,,,,,,
+1001shop.ir,1,commoncrawl,,,,,,
+1003ilam.ir,1,commoncrawl,,,,,,
+10098.ir,1,commoncrawl,,,,,,
+100ax.ir,1,commoncrawl,,,,,,
+100cloth.ir,1,commoncrawl,,,,,,
+100collection.ir,1,commoncrawl,,,,,,
+100crystal.ir,1,commoncrawl,,,,,,
+100darsadnews.ir,1,commoncrawl,,,,,,
+100doc.ir,1,commoncrawl,,,,,,
+100emag.ir,1,commoncrawl,,,,,,
+100fabric.ir,1,commoncrawl,,,,,,
+100gahvare.ir,1,commoncrawl,,,,,,
+100kala.ir,1,commoncrawl,,,,,,
+100parcheh.ir,1,commoncrawl,,,,,,
+100ra.ir,1,commoncrawl,,,,,,
+100sandal.ir,1,commoncrawl,,,,,,
+100slipper.ir,1,commoncrawl,,,,,,
+100startups.ir,1,commoncrawl,,,,,,
+100suction.ir,1,commoncrawl,,,,,,
+100tamam.ir,1,commoncrawl,,,,,,
+100toomani.ir,1,commoncrawl,,,,,,
+1010101010.ir,1,commoncrawl,,,,,,
+101kala.ir,1,commoncrawl,,,,,,
+101service.ir,1,commoncrawl,,,,,,
+101stone.ir,1,commoncrawl,,,,,,
+10320.ir,1,commoncrawl,,,,,,
+10600.ir,1,commoncrawl,,,,,,
+10a.ir,1,commoncrawl,,,,,,
+10ampodcast.ir,1,commoncrawl,,,,,,
+10art.ir,1,commoncrawl,,,,,,
+10az10.ir,1,commoncrawl,,,,,,
+10b70.ir,1,commoncrawl,,,,,,
+10bit.ir,1,commoncrawl,,,,,,
+10cafe.ir,1,commoncrawl,,,,,,
+10g.ir,1,commoncrawl,,,,,,
+10gan.ir,1,commoncrawl,,,,,,
+10list.ir,1,commoncrawl,,,,,,
+10maharat.ir,1,commoncrawl,,,,,,
+10music.ir,1,commoncrawl,,,,,,
+10omiha.ir,1,commoncrawl,,,,,,
+10plugin.ir,1,commoncrawl,,,,,,
+10points.ir,1,commoncrawl,,,,,,
+10trend.ir,1,commoncrawl,,,,,,
+10w.ir,1,commoncrawl,,,,,,
+10y.ir,1,commoncrawl,,,,,,
+1100shahid.ir,1,commoncrawl,,,,,,
+11092.ir,1,commoncrawl,,,,,,
+110book.ir,1,commoncrawl,,,,,,
+110center.ir,1,commoncrawl,,,,,,
+110host.ir,1,commoncrawl;majestic,dead,,,,IR,201999
+110pvc.ir,1,commoncrawl,,,,,,
+111.ir,1,commoncrawl,,,,,,
+111555.ir,1,commoncrawl,,,,,,
+111666.ir,1,commoncrawl,,,,,,
+111888.ir,1,commoncrawl,,,,,,
+111grp.ir,1,commoncrawl,,,,,,
+1122.ir,1,tranco,junk,0.0,0.3049,Domain For Sale - Domain Parking,IR,58262
+1125.ir,1,commoncrawl,,,,,,
+114noor.ir,1,commoncrawl,,,,,,
+114plak.ir,1,commoncrawl,,,,,,
+115.ir,1,commoncrawl,,,,,,
+115package.ir,1,commoncrawl,,,,,,
+115wp.ir,1,commoncrawl,,,,,,
+1180.ir,1,commoncrawl,,,,,,
+118118.ir,1,commoncrawl,,,,,,
+118ahkam.ir,1,commoncrawl,,,,,,
+118asansor.ir,1,commoncrawl,,,,,,
+118bartariran.ir,1,commoncrawl,,,,,,
+118bookshop.ir,1,commoncrawl,,,,,,
+118cinema.ir,1,commoncrawl,,,,,,
+118digi.ir,1,commoncrawl,,,,,,
+118ejob.ir,1,commoncrawl,,,,,,
+118elec.ir,1,commoncrawl,,,,,,
+118iran.ir,1,commoncrawl,,,,,,
+118iranwork.ir,1,commoncrawl,,,,,,
+118khodro.ir,1,commoncrawl,,,,,,
+118lab.ir,1,commoncrawl,,,,,,
+118mobile.ir,1,commoncrawl,,,,,,
+118nahal.ir,1,commoncrawl,,,,,,
+118pezeshkaan.ir,1,commoncrawl,,,,,,
+118sakhteman.ir,1,commoncrawl,,,,,,
+118sang.ir,1,commoncrawl,,,,,,
+118ss.ir,1,commoncrawl,,,,,,
+118tasisat.ir,1,commoncrawl,,,,,,
+118tel.ir,1,commoncrawl,,,,,,
+11gig.ir,1,commoncrawl,,,,,,
+11icsau.ir,1,commoncrawl,,,,,,
+11kala.ir,1,commoncrawl,,,,,,
+12-12.ir,1,commoncrawl,,,,,,
+120km.ir,1,commoncrawl,,,,,,
+1213.ir,1,commoncrawl,,,,,,
+121golran.ir,1,commoncrawl,,,,,,
+121kheshtco.ir,1,commoncrawl,,,,,,
+1226.ir,1,commoncrawl,,,,,,
+123-app.ir,1,commoncrawl,,,,,,
+123-dr.ir,1,commoncrawl,,,,,,
+12345.ir,1,commoncrawl,,,,,,
+1234shop.ir,1,commoncrawl,,,,,,
+123battery.ir,1,commoncrawl,,,,,,
+123blog.ir,1,commoncrawl,,,,,,
+123bookmarket.ir,1,commoncrawl,,,,,,
+123brand.ir,1,commoncrawl,,,,,,
+123buy.ir,1,commoncrawl,,,,,,
+123farsh.ir,1,commoncrawl,,,,,,
+123golden.ir,1,commoncrawl,,,,,,
+123ketab.ir,1,commoncrawl,,,,,,
+123kif.ir,1,commoncrawl,,,,,,
+123maharat.ir,1,commoncrawl,,,,,,
+123mobile.ir,1,commoncrawl,,,,,,
+123niaz.ir,1,commoncrawl,,,,,,
+123project.ir,1,commoncrawl,,,,,,
+123proton.ir,1,commoncrawl,,,,,,
+123select.ir,1,commoncrawl,,,,,,
+123sitesaz.ir,1,commoncrawl,,,,,,
+123system.ir,1,commoncrawl,,,,,,
+123tahrir.ir,1,commoncrawl,,,,,,
+123tools.ir,1,commoncrawl,,,,,,
+123typetranslate.ir,1,commoncrawl,,,,,,
+123ussd.ir,1,commoncrawl,,,,,,
+123z.ir,1,commoncrawl,,,,,,
 124.ir,1,tranco,dead,,,,IR,34837
+125bojnord.ir,1,commoncrawl,,,,,,
+125fire.ir,1,commoncrawl,,,,,,
+125shahriar.ir,1,commoncrawl,,,,,,
 128-273-66.ir,1,tranco,dead,,,,,
+129i.ir,1,commoncrawl,,,,,,
+12application.ir,1,commoncrawl,,,,,,
 12ghadam.ir,1,tranco,iranian,0.7,0.9946,دوازده قدم-مسیر بهبودی با کارکرد قدم های دوازده گانه✔️,IR,204213
+12group.ir,1,commoncrawl,,,,,,
+12mmiconf.ir,1,commoncrawl,,,,,,
+12museum.ir,1,commoncrawl,,,,,,
+12steps.ir,1,commoncrawl,,,,,,
 13-905-33-84.ir,1,tranco,dead,,,,,
+1313.ir,1,commoncrawl,,,,,,
 131313.ir,1,tranco,dead,,,,,
-141.ir,1,majestic;tranco,iranian,0.73,1.0,سامانه 141,IR,205585
+137service.ir,1,commoncrawl,,,,,,
+14-m.ir,1,commoncrawl,,,,,,
+1400kala.ir,1,commoncrawl,,,,,,
+140kala.ir,1,commoncrawl,,,,,,
+141.ir,1,commoncrawl;majestic;tranco,iranian,0.73,1.0,سامانه 141,IR,205585
+1426.ir,1,commoncrawl,,,,,,
+1453.ir,1,commoncrawl,,,,,,
+1475.ir,1,commoncrawl,,,,,,
+14e.ir,1,commoncrawl,,,,,,
+14icce.ir,1,commoncrawl,,,,,,
+14khorshid.ir,1,commoncrawl,,,,,,
+14ma.ir,1,commoncrawl,,,,,,
+14setareh.ir,1,commoncrawl,,,,,,
+15-66.ir,1,commoncrawl,,,,,,
+1500co.ir,1,commoncrawl,,,,,,
 1515.ir,1,tranco,iranian,0.8,1.0,سامانه ۱۵۱۵ - درگاه ملی کارشناسی رسمی,IR,25184
+1525.ir,1,commoncrawl,,,,,,
 1543.ir,1,tranco,dead,,,,IR,48359
+1561.ir,1,commoncrawl,,,,,,
+1574.ir,1,commoncrawl,,,,,,
+1585.ir,1,commoncrawl,,,,,,
+15khordad42.ir,1,commoncrawl,,,,,,
+15sms.ir,1,commoncrawl,,,,,,
+16000.ir,1,commoncrawl,,,,,,
+1614shop.ir,1,commoncrawl,,,,,,
+162d.ir,1,commoncrawl,,,,,,
+1649.ir,1,commoncrawl,,,,,,
+16book.ir,1,commoncrawl,,,,,,
+17025.ir,1,commoncrawl,,,,,,
+17025lab.ir,1,commoncrawl,,,,,,
+17043.ir,1,commoncrawl,,,,,,
 172-63.ir,1,tranco,dead,,,,,
+1721.ir,1,commoncrawl,,,,,,
 1725.ir,1,tranco,foreign,0.0375,0.0,Index of /,IR,43754
+1732.ir,1,commoncrawl,,,,,,
+1776.ir,1,commoncrawl,,,,,,
+17fani.ir,1,commoncrawl,,,,,,
+17shpl.ir,1,commoncrawl,,,,,,
+18000shahid.ir,1,commoncrawl,,,,,,
+180economy.ir,1,commoncrawl,,,,,,
+180sanat.ir,1,commoncrawl,,,,,,
+1813.ir,1,commoncrawl,,,,,,
+1824.ir,1,commoncrawl,,,,,,
+1843.ir,1,commoncrawl,,,,,,
+18650store.ir,1,commoncrawl,,,,,,
 189-208-55-72.ir,1,tranco,dead,,,,,
+18arcims.ir,1,commoncrawl,,,,,,
+18karaj.ir,1,commoncrawl,,,,,,
+18m.ir,1,commoncrawl,,,,,,
+18p.ir,1,commoncrawl,,,,,,
+18sms.ir,1,commoncrawl,,,,,,
+1914.ir,1,commoncrawl,,,,,,
 195-207-44-72.ir,1,tranco,dead,,,,,
 198-44.ir,1,tranco,dead,,,,,
-1architect.ir,1,tranco,iranian,0.6025,0.9721,یک آرشیتکت,IR,43754
-1car.ir,1,tranco,iranian,0.73,0.979,وانکار :: قیمت خودرو و اخبار خودرو,US,13335
-1da.ir,1,tranco,iranian,0.7025,0.9812,کوتاه کننده لینک | وان دا,IR,205585
-1ea.ir,1,tranco,iranian,0.78,0.9745,کوتاه کننده لینک با کسب درامد ~ کوتاه کننده آدرس فارسی ~ یکیا,IR,43754
-1hana.ir,1,tranco,iranian,0.815,0.9103,کوتاه کننده لینک حنا,IR,205585
-1st.ir,1,majestic;tranco,iranian,0.83,0.9903,فروشگاه اینترنتی تجارت اول,IR,43754
-2020i.ir,1,tranco,iranian,0.85,0.9225,صفحه اصلی - خدمات اینترنت مخابرات نتکده,IR,31549
+19ketab.ir,1,commoncrawl,,,,,,
+19service.ir,1,commoncrawl,,,,,,
+19studio.ir,1,commoncrawl,,,,,,
+1abc.ir,1,commoncrawl,,,,,,
+1abzaar.ir,1,commoncrawl,,,,,,
+1abzar.ir,1,commoncrawl,,,,,,
+1ala.ir,1,commoncrawl,,,,,,
+1and4elements.ir,1,commoncrawl,,,,,,
+1architect.ir,1,commoncrawl;tranco,iranian,0.6025,0.9721,یک آرشیتکت,IR,43754
+1asgari.ir,1,commoncrawl,,,,,,
+1ashena.ir,1,commoncrawl,,,,,,
+1aye.ir,1,commoncrawl,,,,,,
+1baste.ir,1,commoncrawl,,,,,,
+1battery.ir,1,commoncrawl,,,,,,
+1bazdid.ir,1,commoncrawl,,,,,,
+1belka.ir,1,commoncrawl,,,,,,
+1bio.ir,1,commoncrawl,,,,,,
+1biz.ir,1,commoncrawl,,,,,,
+1bn.ir,1,commoncrawl,,,,,,
+1bourse.ir,1,commoncrawl,,,,,,
+1car.ir,1,commoncrawl;tranco,iranian,0.73,0.979,وانکار :: قیمت خودرو و اخبار خودرو,US,13335
+1cctv.ir,1,commoncrawl,,,,,,
+1cloob.ir,1,commoncrawl,,,,,,
+1com.ir,1,commoncrawl,,,,,,
+1content.ir,1,commoncrawl,,,,,,
+1da.ir,1,commoncrawl;tranco,iranian,0.7025,0.9812,کوتاه کننده لینک | وان دا,IR,205585
+1dayoff.ir,1,commoncrawl,,,,,,
+1do.ir,1,commoncrawl,,,,,,
+1doost.ir,1,commoncrawl,,,,,,
+1ea.ir,1,commoncrawl;tranco,iranian,0.78,0.9745,کوتاه کننده لینک با کسب درامد ~ کوتاه کننده آدرس فارسی ~ یکیا,IR,43754
+1engr.ir,1,commoncrawl,,,,,,
+1ergonomist.ir,1,commoncrawl,,,,,,
+1euro.ir,1,commoncrawl,,,,,,
+1fani.ir,1,commoncrawl,,,,,,
+1farakav.ir,1,commoncrawl,,,,,,
+1floor.ir,1,commoncrawl,,,,,,
+1form.ir,1,commoncrawl,,,,,,
+1fox.ir,1,commoncrawl,,,,,,
+1gs.ir,1,commoncrawl,,,,,,
+1hamshahri.ir,1,commoncrawl,,,,,,
+1hana.ir,1,commoncrawl;tranco,iranian,0.815,0.9103,کوتاه کننده لینک حنا,IR,205585
+1hl.ir,1,commoncrawl,,,,,,
+1imeni.ir,1,commoncrawl,,,,,,
+1iweb.ir,1,commoncrawl,,,,,,
+1ja.ir,1,commoncrawl,,,,,,
+1jib.ir,1,commoncrawl,,,,,,
+1kalashop.ir,1,commoncrawl,,,,,,
+1karmand.ir,1,commoncrawl,,,,,,
+1kfollower.ir,1,commoncrawl,,,,,,
+1kg.ir,1,commoncrawl,,,,,,
+1kpanel.ir,1,commoncrawl,,,,,,
+1li.ir,1,commoncrawl,,,,,,
+1lor.ir,1,commoncrawl,,,,,,
+1masrafan.ir,1,commoncrawl,,,,,,
+1masrafha.ir,1,commoncrawl,,,,,,
+1masrafo.ir,1,commoncrawl,,,,,,
+1mb.ir,1,commoncrawl,,,,,,
+1md.ir,1,commoncrawl,,,,,,
+1mehr.ir,1,commoncrawl,,,,,,
+1mes.ir,1,commoncrawl,,,,,,
+1milion.ir,1,commoncrawl,,,,,,
+1min-ashpazi.ir,1,commoncrawl,,,,,,
+1mohammadi.ir,1,commoncrawl,,,,,,
+1na.ir,1,commoncrawl,,,,,,
+1newday.ir,1,commoncrawl,,,,,,
+1o2.ir,1,commoncrawl,,,,,,
+1offer.ir,1,commoncrawl,,,,,,
+1om.ir,1,commoncrawl,,,,,,
+1on.ir,1,commoncrawl,,,,,,
+1orange.ir,1,commoncrawl,,,,,,
+1panjereh.ir,1,commoncrawl,,,,,,
+1parche1.ir,1,commoncrawl,,,,,,
+1parche2.ir,1,commoncrawl,,,,,,
+1parche7.ir,1,commoncrawl,,,,,,
+1parche8.ir,1,commoncrawl,,,,,,
+1partocrs.ir,1,commoncrawl,,,,,,
+1pelak.ir,1,commoncrawl,,,,,,
+1pix.ir,1,commoncrawl,,,,,,
+1pj.ir,1,commoncrawl,,,,,,
+1plco.ir,1,commoncrawl,,,,,,
+1pools.ir,1,commoncrawl,,,,,,
+1pro.ir,1,commoncrawl,,,,,,
+1pvc.ir,1,commoncrawl,,,,,,
+1q1.ir,1,commoncrawl,,,,,,
+1qeshm.ir,1,commoncrawl,,,,,,
+1riali.ir,1,commoncrawl,,,,,,
+1rj.ir,1,commoncrawl,,,,,,
+1roid.ir,1,commoncrawl,,,,,,
+1roman.ir,1,commoncrawl,,,,,,
+1sargarmi.ir,1,commoncrawl,,,,,,
+1see.ir,1,commoncrawl,,,,,,
+1set.ir,1,commoncrawl,,,,,,
+1shoo.ir,1,commoncrawl,,,,,,
+1shooiande.ir,1,commoncrawl,,,,,,
+1shooyande.ir,1,commoncrawl,,,,,,
+1st.ir,1,commoncrawl;majestic;tranco,iranian,0.83,0.9903,فروشگاه اینترنتی تجارت اول,IR,43754
+1stwebdesigner.ir,1,commoncrawl,,,,,,
+1style.ir,1,commoncrawl,,,,,,
+1sz.ir,1,commoncrawl,,,,,,
+1ta100.ir,1,commoncrawl,,,,,,
+1taweb.ir,1,commoncrawl,,,,,,
+1taz.ir,1,commoncrawl,,,,,,
+1td.ir,1,commoncrawl,,,,,,
+1tj.ir,1,commoncrawl,,,,,,
+1tobreh.ir,1,commoncrawl,,,,,,
+1toshak.ir,1,commoncrawl,,,,,,
+1travian.ir,1,commoncrawl,,,,,,
+1tw.ir,1,commoncrawl,,,,,,
+1url.ir,1,commoncrawl,,,,,,
+1v9.ir,1,commoncrawl,,,,,,
+1vp.ir,1,commoncrawl,,,,,,
+1world.ir,1,commoncrawl,,,,,,
+1xd.ir,1,commoncrawl,,,,,,
+1xs.ir,1,commoncrawl,,,,,,
+1yas.ir,1,commoncrawl,,,,,,
+2-8.ir,1,commoncrawl,,,,,,
+2-t.ir,1,commoncrawl,,,,,,
+20-cuit.ir,1,commoncrawl,,,,,,
+20-up.ir,1,commoncrawl,,,,,,
+20000000.ir,1,commoncrawl,,,,,,
+2000200.ir,1,commoncrawl,,,,,,
+2000937.ir,1,commoncrawl,,,,,,
+2000kala.ir,1,commoncrawl,,,,,,
+200200.ir,1,commoncrawl,,,,,,
+2005.ir,1,commoncrawl,,,,,,
+2007.ir,1,commoncrawl,,,,,,
+200love.ir,1,commoncrawl,,,,,,
+2012kala.ir,1,commoncrawl,,,,,,
+2014.ir,1,commoncrawl,,,,,,
+2016downloadnew.ir,1,commoncrawl,,,,,,
+2018.ir,1,commoncrawl,,,,,,
+2020i.ir,1,commoncrawl;tranco,iranian,0.85,0.9225,صفحه اصلی - خدمات اینترنت مخابرات نتکده,IR,31549
 2020kanoon.ir,1,tranco,iranian,0.6,0.3729,سامانه 2020 - درگاه ملی کارشناسی,IR,205585
+2020news.ir,1,commoncrawl,,,,,,
+2020tci.ir,1,commoncrawl,,,,,,
+2023.ir,1,commoncrawl,,,,,,
+2024.ir,1,commoncrawl,,,,,,
+202food.ir,1,commoncrawl,,,,,,
+2030.ir,1,commoncrawl,,,,,,
+2030kala.ir,1,commoncrawl,,,,,,
+20365.ir,1,commoncrawl,,,,,,
+20370.ir,1,commoncrawl,,,,,,
+2050co.ir,1,commoncrawl,,,,,,
+2056.ir,1,commoncrawl,,,,,,
+2059.ir,1,commoncrawl,,,,,,
 206-197-43.ir,1,tranco,dead,,,,,
+206nistam.ir,1,commoncrawl,,,,,,
 207-693-55-23.ir,1,tranco,dead,,,,,
-20script.ir,1,majestic;tranco,uncertain,0.58,0.9163,بیست اسکریپت - بزرگترین پایگاه دانلود اسکریپت,IR,43754
+2072.ir,1,commoncrawl,,,,,,
+2080.ir,1,commoncrawl,,,,,,
+20a.ir,1,commoncrawl,,,,,,
+20alyaf.ir,1,commoncrawl,,,,,,
+20amar.ir,1,commoncrawl,,,,,,
+20baft.ir,1,commoncrawl,,,,,,
+20bar.ir,1,commoncrawl,,,,,,
+20chatroom.ir,1,commoncrawl,,,,,,
+20file.ir,1,commoncrawl,,,,,,
+20follow.ir,1,commoncrawl,,,,,,
+20ghanadi.ir,1,commoncrawl,,,,,,
+20host.ir,1,commoncrawl,,,,,,
+20kalla.ir,1,commoncrawl,,,,,,
+20l.ir,1,commoncrawl,,,,,,
+20landshop.ir,1,commoncrawl,,,,,,
+20learn.ir,1,commoncrawl,,,,,,
+20m.ir,1,commoncrawl,,,,,,
+20misham.ir,1,commoncrawl,,,,,,
+20nomre.ir,1,commoncrawl,,,,,,
+20oil.ir,1,commoncrawl,,,,,,
+20p.ir,1,commoncrawl,,,,,,
+20pastil.ir,1,commoncrawl,,,,,,
+20pbn.ir,1,commoncrawl,,,,,,
+20plast.ir,1,commoncrawl,,,,,,
+20power.ir,1,commoncrawl,,,,,,
+20roman.ir,1,commoncrawl,,,,,,
+20script.ir,1,commoncrawl;majestic;tranco,uncertain,0.58,0.9163,بیست اسکریپت - بزرگترین پایگاه دانلود اسکریپت,IR,43754
+20service.ir,1,commoncrawl,,,,,,
+20set.ir,1,commoncrawl,,,,,,
+20shoo.ir,1,commoncrawl,,,,,,
+20t20.ir,1,commoncrawl,,,,,,
+20thippc.ir,1,commoncrawl,,,,,,
+20up.ir,1,commoncrawl,,,,,,
 21ayar.ir,1,tranco,dead,,,,,
+21fqe.ir,1,commoncrawl,,,,,,
+21janebi.ir,1,commoncrawl,,,,,,
+21s.ir,1,commoncrawl,,,,,,
+21th.ir,1,commoncrawl,,,,,,
+220adv.ir,1,commoncrawl,,,,,,
+22221.ir,1,commoncrawl,,,,,,
+222555.ir,1,commoncrawl,,,,,,
+222888.ir,1,commoncrawl,,,,,,
+223344.ir,1,commoncrawl,,,,,,
+2235003.ir,1,commoncrawl,,,,,,
+2273.ir,1,commoncrawl,,,,,,
+229amini.ir,1,commoncrawl,,,,,,
+22bahman.ir,1,commoncrawl,,,,,,
+22esfand.ir,1,commoncrawl,,,,,,
 23055.ir,1,tranco,iranian,0.78,0.9909,مرکز وکلا کارشناسان رسمی و مشاوران قوه قضائیه,IR,25184
+2340.ir,1,commoncrawl,,,,,,
+23ro.ir,1,commoncrawl,,,,,,
+24-7lab.ir,1,commoncrawl,,,,,,
+24000000.ir,1,commoncrawl,,,,,,
+2400shahid.ir,1,commoncrawl,,,,,,
+2430.ir,1,commoncrawl,,,,,,
+2448.ir,1,commoncrawl,,,,,,
+247music.ir,1,commoncrawl,,,,,,
+24808.ir,1,commoncrawl,,,,,,
+2485.ir,1,commoncrawl,,,,,,
+2491.ir,1,commoncrawl,,,,,,
+24blog.ir,1,commoncrawl,,,,,,
+24box.ir,1,commoncrawl,,,,,,
+24cafe.ir,1,commoncrawl,,,,,,
+24connect.ir,1,commoncrawl,,,,,,
+24crs.ir,1,commoncrawl,,,,,,
+24d.ir,1,commoncrawl,,,,,,
+24dayan.ir,1,commoncrawl,,,,,,
+24design.ir,1,commoncrawl,,,,,,
+24ensco.ir,1,commoncrawl,,,,,,
+24gold.ir,1,commoncrawl,,,,,,
+24iran.ir,1,commoncrawl,,,,,,
+24is.ir,1,commoncrawl,,,,,,
+24janebi.ir,1,commoncrawl,,,,,,
+24lancer.ir,1,commoncrawl,,,,,,
+24mobile.ir,1,commoncrawl,,,,,,
+24my.ir,1,commoncrawl,,,,,,
 24nevesht.ir,1,tranco,foreign,0.0375,0.0,Suspended Domain,IR,212216
-24nevis.ir,1,tranco,iranian,0.78,1.0,صفحه اصلی - 24 نویس,IR,212216
-24times.ir,1,tranco,iranian,0.715,0.994,24 تایمز - مجله تفریحی,IR,48715
+24nevis.ir,1,commoncrawl;tranco,iranian,0.78,1.0,صفحه اصلی - 24 نویس,IR,212216
+24on.ir,1,commoncrawl,,,,,,
+24onlinenews.ir,1,commoncrawl,,,,,,
+24parvaz.ir,1,commoncrawl,,,,,,
+24saat.ir,1,commoncrawl,,,,,,
+24saniyeh.ir,1,commoncrawl,,,,,,
+24sky.ir,1,commoncrawl,,,,,,
+24soal.ir,1,commoncrawl,,,,,,
+24t.ir,1,commoncrawl,,,,,,
+24tala.ir,1,commoncrawl,,,,,,
+24talk.ir,1,commoncrawl,,,,,,
+24tech.ir,1,commoncrawl,,,,,,
+24times.ir,1,commoncrawl;tranco,iranian,0.715,0.994,24 تایمز - مجله تفریحی,IR,48715
 24tomani.ir,1,tranco,foreign,0.0375,0.0,Index of /,IR,31549
+24windowsvps.ir,1,commoncrawl,,,,,,
+256.ir,1,commoncrawl,,,,,,
+25festival.ir,1,commoncrawl,,,,,,
+25ta.ir,1,commoncrawl,,,,,,
+25y.ir,1,commoncrawl,,,,,,
+260.ir,1,commoncrawl,,,,,,
+271f.ir,1,commoncrawl,,,,,,
+284243.ir,1,commoncrawl,,,,,,
+2850.ir,1,commoncrawl,,,,,,
+2865.ir,1,commoncrawl,,,,,,
+28coffee.ir,1,commoncrawl,,,,,,
+2981.ir,1,commoncrawl,,,,,,
+2ad.ir,1,commoncrawl,,,,,,
+2ae.ir,1,commoncrawl,,,,,,
+2afmchat.ir,1,commoncrawl,,,,,,
 2agoo.com,0,lists,iranian,0.765,1.0,دعاگو - ادعیه و اذکار قرآنی و باستان شناسی - در این سایت مجموعه ای از بهترین ذکر و دعاهای قرآنی و ادعیه و اذکار مجرب بسیار قوی قرار داده شده است,IR,212216
+2android.ir,1,commoncrawl,,,,,,
+2b2c.ir,1,commoncrawl,,,,,,
+2bconsult.ir,1,commoncrawl,,,,,,
+2bk.ir,1,commoncrawl,,,,,,
+2c0.ir,1,commoncrawl,,,,,,
+2char.ir,1,commoncrawl,,,,,,
+2charkhe.ir,1,commoncrawl,,,,,,
+2dar1.ir,1,commoncrawl,,,,,,
+2deliha.ir,1,commoncrawl,,,,,,
+2dev.ir,1,commoncrawl,,,,,,
+2dina.ir,1,commoncrawl,,,,,,
+2energy.ir,1,commoncrawl,,,,,,
+2fanglass.ir,1,commoncrawl,,,,,,
+2foriat.ir,1,commoncrawl,,,,,,
+2fox.ir,1,commoncrawl,,,,,,
+2hoseinzade.ir,1,commoncrawl,,,,,,
+2hosseinzade.ir,1,commoncrawl,,,,,,
+2invest.ir,1,commoncrawl,,,,,,
+2iranianconf.ir,1,commoncrawl,,,,,,
+2iso.ir,1,commoncrawl,,,,,,
+2ja.ir,1,commoncrawl,,,,,,
+2jx.ir,1,commoncrawl,,,,,,
+2k2.ir,1,commoncrawl,,,,,,
+2kan.ir,1,commoncrawl,,,,,,
+2khtaraneh.ir,1,commoncrawl,,,,,,
+2kkanonline.ir,1,commoncrawl,,,,,,
+2kr.ir,1,commoncrawl,,,,,,
+2lak.ir,1,commoncrawl,,,,,,
+2lat-raianeh-shopping.ir,1,commoncrawl,,,,,,
 30sc.ir,1,tranco,iranian,0.6025,0.9889,سی ثانیه,DE,24940
 33-74www.ir,1,tranco,dead,,,,,
 33314466.ir,1,tranco,uncertain,0.55,0.3103,,IR,205585
@@ -131,6 +658,7 @@ acecr.ac.ir,1,majestic,uncertain,0.5231,0.2853,,IR,205585
 achareh.ir,1,tranco,uncertain,0.55,0.901,,IR,205585
 acientirani-uor4.ir,1,tranco,dead,,,,DE,24940
 activealarm.ir,1,tranco,iranian,1.0,0.9711,فروشگاه اکتیوآلارم | سیستم‌های حفاظتی و امنیتی خودرو | فروشگاه اکتیوآلارم,IR,204213
+activeideans.ir,1,tranco,,,,,,
 actoverco.com,0,lists,iranian,0.78,0.9349,داروسازی اکتوورکو,IR,61173
 adabiat2mnbi.ir,1,tranco,iranian,0.6175,0.9762,دنیای ادبیات,DE,24940
 adadai.ir,1,tranco,iranian,0.815,0.9973,پلتفرم هوش مصنوعی حقوقی | آداد,IR,205585
@@ -362,6 +890,7 @@ artadata.ir,1,tranco,uncertain,0.55,1.0,ایده خلاقان سبز آرتا,IR
 artadl.ir,1,tranco,iranian,0.6175,0.9818,آرتا دی ال,IR,43754
 artaelectric.ir,1,tranco,iranian,0.88,0.9818,آرتا الکتریک - بازار برق و روشنایی,IR,48147
 artificial.ir,1,tranco,foreign,0.0375,0.0,,US,14061
+artinweb.ir,1,tranco,,,,,,
 artnaz.ir,1,tranco,iranian,0.765,0.9825,فروشگاه آنلاین لوازم رزین - آرتناز,IR,31549
 arums.ac.ir,1,majestic;tranco,iranian,0.765,0.9934,دانشگاه علوم پزشکی و خدمات بهداشتی درمانی اردبیل,IR,58224
 arvancaas.ir,1,tranco,dead,,,,,
@@ -463,6 +992,7 @@ azadpack.ir,1,tranco,iranian,0.83,0.9541,آزاد پک - تولیدی جعبه �
 azadyab.ir,1,tranco,iranian,0.715,0.9931,آزادیاب — جواب جدول، سرنخ‌ها و بازی‌های کلمه‌ای,DE,24940
 azangoo.ir,1,majestic,iranian,0.795,0.9511,سایت اذان گو | دستگاه اذان گو ، نمایشگر و ساعت اوقات شرعی | رایانیک خاور,IR,60631
 azaran.com,0,lists,iranian,0.765,0.977,آذران فضانما | تولیدکننده محصولات PVC و تجهیزات دکوراسیون اداری,IR,59441
+azarchili.ir,1,tranco,,,,,,
 azardownload.ir,1,tranco,iranian,0.6025,0.9743,آذر دانلود,DE,24940
 azargold.ir,1,tranco,uncertain,0.55,0.8755,ورود به حساب کاربری AzarGold,IR,58224
 azarnezam.ir,1,tranco,iranian,0.6525,0.9895,صفحه اصلی - نظام مهندسی آذربایجان شرقی,IR,48147
@@ -500,6 +1030,7 @@ baghrezvan.ir,1,tranco,iranian,0.7,0.9453,سازمان آرامستان های �
 bagpanizz.ir,1,tranco,iranian,0.78,0.9735,پانیذ - تولیدی کیف - فروشگاه پانیذ,IR,59623
 bahaldownload.ir,1,tranco,iranian,0.6175,0.9866,باحال دانلود (اصلی),IR,43754
 bahalmag.ir,1,tranco,iranian,0.6675,0.99,مجله اینترنتی باحال مگ Bahalmag.ir,DE,24940
+baharan.ir,1,tranco,,,,,,
 baharmri.com,0,lists,iranian,0.765,0.9805,تصویربرداری پزشکی بهار|mri کرج|سی تی اسکن |سونوگرافی,IR,48434
 baharnet.ir,1,tranco,iranian,0.73,0.9393,بهار سامانه شرق | خانه,IR,56466
 baharnews.ir,1,majestic;tranco,iranian,0.795,0.9951,پایگاه خبری بهار نیوز,IR,31549
@@ -826,6 +1357,7 @@ clinicsarallah.ir,1,tranco,uncertain,0.484,0.264,,IR,205585
 clinicserver.ir,1,tranco,dead,,,,,
 cliniczarei.com,0,lists,iranian,0.765,0.9895,کلینیک زارعی | درمان بواسیر (هموروئید)، شقاق، فیستول، کیست مویی و زگیل با لیزر,IR,212216
 cloud.ir,1,tranco,iranian,0.795,0.8944,کلود دات آی‌آر - برترین ارائه دهنده خدمات ابری در ایران,IR,60077
+cloudan.ir,1,tranco,,,,,,
 cloudhub.ir,1,tranco,dead,,,,,
 cloudmagic.ir,1,tranco,iranian,0.6175,0.968,ابر جادو,DE,24940
 clutchgame.ir,1,tranco,iranian,0.83,0.9719,دانلود بازی کلاچ مود شده 2026 | کلاچ جدید با منبع اگزوز دار + دانلود مستقیم نسخه بی نهایت - کلاچ مود شده | منبع اگزوز دار,IR,204213
@@ -1235,6 +1767,7 @@ esftkd.ir,1,tranco,iranian,0.75,0.9535,ESFTKD - سامانه جامع مدیری
 eshia.ir,1,majestic;tranco,iranian,0.7,0.9789,مدرسه فقاهت - تقریر دروس حوزوی - ارتباط شیعی,IR,48434
 eshragh.ir,1,tranco,iranian,0.615,0.9732,پرتال اشراق,IR,205588
 eslms.ir,1,tranco,foreign,0.0375,0.0,,IR,43754
+esmchiy.ir,1,tranco,,,,,,
 esra.ir,1,majestic;tranco,iranian,0.795,0.9993,صفحه اصلـی - بنیاد بین المللی علوم وحیانی اسراء,IR,31549
 essikhangorilla.ir,1,tranco,dead,,,,,
 estjt.ir,1,tranco,iranian,0.7675,0.9982,اتحادیه فروشندگان و سازندگان طلا،جواهر،نقره و سکه تهران - شبکه اطلاع رسانی طلا،جواهر،نقره و سکه,IR,57497
@@ -1445,6 +1978,7 @@ gapfilm.ir,1,tranco,iranian,0.6675,1.0,گپ فیلم | مرجع دانلود ف�
 gapg.ir,1,tranco,iranian,0.6025,1.0,گپ جی پی تی | شروع چت با هوش مصنوعی فارسی,IR,205585
 garfar.ir,1,tranco,dead,,,,,
 garfild.ir,1,tranco,iranian,0.6525,0.9771,گارفیلد (اصلی),IR,43754
+garmestan.ir,1,tranco,,,,,,
 gashtaninews.com,0,lists,iranian,0.73,0.9952,گشتنی نیوز,IR,48551
 gau.ac.ir,1,majestic;tranco,dead,,,,IR,58224
 gbgnetwork.net,0,lists,dead,,,,,
@@ -1936,6 +2470,7 @@ irnic.ir,1,tranco,iranian,0.615,0.9768,ایرنیک (IRNIC) - ایرنیک,IR,35
 ironly4l.ir,1,tranco,dead,,,,,
 irpipa.ir,1,tranco,iranian,0.7175,0.9885,اتحادیه کبوتران مسافتی ایران,IR,58262
 irsf.ir,1,tranco,iranian,0.73,0.9805,فدراسیون شنا، شیرجه و واترپلو جمهوری اسلامی ایران,IR,205585
+irsrv.ir,1,tranco,,,,,,
 irtextbook.ir,1,tranco,dead,,,,IR,60976
 irttf.ir,1,tranco,dead,,,,IR,59431
 irtusepand.ir,1,tranco,iranian,0.7,1.0,سامانه سپند,IR,62442
@@ -2106,6 +2641,7 @@ kavirtire.ir,1,tranco,iranian,0.78,0.9893,کویرتایر | kavir tire,IR,21570
 kayhan.ir,1,majestic;tranco,iranian,0.73,0.9692,kayhan.ir,IR,200324
 kayhannews.ir,1,majestic,dead,,,,IR,31549
 kazerunsfu.ac.ir,1,tranco,iranian,0.83,0.9925,دانشگاه سلمان فارسی کازرون,IR,60631
+kb0.ir,1,tranco,,,,,,
 kban.ir,1,tranco,dead,,,,IR,58262
 kbedc.ir,1,tranco,iranian,0.6025,0.9412,شرکت توزیع برق استان کهگیلویه و بویراحمد,IR,58224
 kdke.ir,1,tranco,iranian,0.83,0.9728,صفحه نخست - کانون دفاتر خدمات الکترونیک قضایی,IR,60631
@@ -2442,6 +2978,7 @@ mefa.ir,1,majestic;tranco,iranian,0.78,0.9997,وزارت امور اقتصادی
 mega-trainer.ir,1,tranco,iranian,0.6025,0.9711,مگا ترینر,IR,43754
 megallerytehran.ir,1,tranco,iranian,0.815,0.8528,آینه قدی، میز کنسول و تخت خواب | فروش و تولید | می گالری,IR,212216
 mehdisport.ir,1,tranco,iranian,0.9,0.9771,خانه | مهدی اسپرت لوازم اسپرت لوکس ماشین,IR,43754
+mehr-ai.ir,1,tranco,,,,,,
 mehraginseir.ir,1,tranco,iranian,0.7175,0.7277,مهر آگين سير کيش | بلیط هواپیما | بلیط چارتر,IR,62173
 mehranstock2.ir,1,tranco,iranian,0.815,0.9901,کفش استوک مهران – خرید کفش استوک اروپایی – مهران استوک,IR,43754
 mehremihan.ir,1,tranco,iranian,0.795,1.0,مهرمیهن | رسانه ی فرهنگ ایران,IR,212216
@@ -2544,6 +3081,7 @@ mobilesari.ir,1,tranco,dead,,,,,
 mobiniranian.ir,1,tranco,dead,,,,IR,205585
 mobinnet.ir,1,majestic;tranco,iranian,0.88,0.9335,اینترنت پرسرعت | خرید اینترنت پرسرعت مبین‌نت,IR,50810
 mobinsb.ir,1,tranco,iranian,0.6,1.0,کارگزاری مبین سرمایه,IR,25184
+mobinserver.ir,1,tranco,,,,,,
 mobit.ir,1,tranco,iranian,0.765,0.8347,مبیت - فروشگاه اینترنتی موبایل و کالای دیجیتال,IR,205585
 moboface.ir,1,tranco,iranian,0.815,0.8651,MoboFace موبوفیس | فروشگاه کاور گوشی موبایل +لوازم جانبی موبایل,IR,43754
 mobofun.ir,1,tranco,dead,,,,IR,202319
@@ -2755,6 +3293,7 @@ neginfile.ir,1,tranco,dead,,,,,
 nehzat.ir,1,tranco,foreign,0.2379,0.0043,Islamic Advertisement Organization,IR,205585
 neor.ir,1,majestic;tranco,iranian,0.73,0.7093,نئورفاوا | NeorFava,IR,43754
 neshanmap.ir,1,tranco,dead,,,,,
+neshatserver.ir,1,tranco,,,,,,
 netbazshop.ir,1,tranco,dead,,,,,
 netgasht.com,0,lists,iranian,0.745,0.9745,نت گشت ، گشتی در دنیای مجازی,IR,212216
 netoffshop.ir,1,tranco,iranian,0.765,0.9726,نت آف شاپ,IR,25184
@@ -2991,6 +3530,7 @@ parvanweb.ir,1,majestic;tranco,iranian,0.73,0.953,طراحی سایت و قال�
 pasadnsg.ir,1,tranco,iranian,0.6025,0.9638,پاساد,DE,24940
 pasakgroup.com,0,lists,dead,,,,,
 pasargadinsurance.ir,1,tranco,dead,,,,IR,58224
+pasarguardms.ir,1,tranco,,,,,,
 paslanmaz.ir,1,tranco,dead,,,,,
 pasokhgoo.ir,1,majestic;tranco,iranian,0.7025,1.0,مرکز ملی پاسخگویی به سوالات دینی | پرسش کلید دانایی,IR,60976
 pasteur.ac.ir,1,majestic,foreign,0.0375,0.0,Pasteur Institute of Iran,IR,6736
@@ -3133,6 +3673,7 @@ profilegram.ir,1,tranco,iranian,0.7,0.9455,مرجع عکس پروفایل و ع�
 profishop.ir,1,tranco,dead,,,,IR,203916
 progem.ir,1,tranco,iranian,0.75,0.93,خرید جم فری فایر فوری 💎 پرو جم,IR,59623
 proh.ir,1,tranco,dead,,,,,
+projectis.ir,1,tranco,,,,,,
 promptall.ir,1,tranco,uncertain,0.379,0.1167,پرامپت آماده هوش مصنوعی - پرامپت آل | PromptAll,IR,59441
 proname.ir,1,tranco,foreign,0.0375,0.0,,DE,24940
 proone.ir,1,tranco,iranian,0.83,0.874,پرووان تولیدکننده و عرضه کننده انواع لوازم جانبی موبایل و کامپیوتر,IR,48715
@@ -3948,6 +4489,7 @@ tehrandrug.com,0,lists,dead,,,,,
 tehranedu.ir,1,tranco,dead,,,,,
 tehrangarage.ir,1,tranco,foreign,0.0375,0.0,403 Forbidden,IR,204213
 tehrangasco.ir,1,tranco,dead,,,,IR,42337
+tehraninews.ir,1,tranco,,,,,,
 tehranionliine.ir,1,tranco,dead,,,,,
 tehranlaserclinic.com,0,lists,iranian,0.75,1.0,کلینیک پوست و مو آسمان | خدمات زیبایی لیزر موهای زائد بدن,IR,201999
 tehranpcservice.ir,1,tranco,iranian,0.73,0.375,تهران پی سی سرویس - یکی از مراجع دانلود بازی کامپیوتر,IR,51431

@@ -33,6 +33,18 @@ class FeatureTests(unittest.TestCase):
         feats = features.extract("<title>&#1583;&#1587;&#1578; &#1575;&#1587;&#1578;</title>")
         self.assertGreater(feats["persian_ratio"], 0.5)
 
+    def test_parked_detection_english(self):
+        self.assertTrue(features.parked("<h1>Domain For Sale</h1>"))
+        self.assertTrue(features.parked("<p>Buy this domain today</p>"))
+        self.assertFalse(features.parked("<p>فروشگاه اینترنتی</p>"))
+
+    def test_parked_detection_persian(self):
+        self.assertTrue(features.parked("<p>این دامنه برای فروش است</p>"))
+
+    def test_extract_marks_parked(self):
+        feats = features.extract("<html><body>Domain Parking</body></html>")
+        self.assertTrue(feats["parked"])
+
 
 class ScorerTests(unittest.TestCase):
     def test_iranian_page(self):
@@ -54,6 +66,17 @@ class ScorerTests(unittest.TestCase):
         feats = {"persian_ratio": 0.15, "lang": "fa", "token_hits": ["weak:ایران"]}
         _, verdict = scorer.score(feats)
         self.assertEqual(verdict, "uncertain")
+
+    def test_parked_page_is_junk(self):
+        feats = {
+            "persian_ratio": 0.9,
+            "lang": "fa",
+            "token_hits": ["strong:phone_ir"],
+            "parked": True,
+        }
+        value, verdict = scorer.score(feats)
+        self.assertEqual(verdict, "junk")
+        self.assertEqual(value, 0.0)
 
 
 if __name__ == "__main__":

@@ -22,6 +22,8 @@ def lang_score(lang: str) -> float:
 
 
 def score(features: dict) -> tuple[float, str]:
+    if features.get("parked"):
+        return 0.0, "junk"
     ratio = features.get("persian_ratio", 0.0) or 0.0
     fa_component = min(ratio / 0.30, 1.0)
     tok_component = token_score(features.get("token_hits", []))

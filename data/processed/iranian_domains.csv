@@ -136,6 +136,7 @@ spadcharter.ir,1,tranco,iranian,0.895,0.9902,اسپادچارتر | خرید ب�
 splus.ir,1,majestic;tranco,iranian,0.895,0.818,سروش‌پلاس,IR,21341
 tlbx.ir,1,tranco,iranian,0.895,0.9961,جعبه ابزار,IR,205585
 xzn.ir,1,majestic;tranco,iranian,0.895,0.9666,XZN Hosting | هاست رایگان - خرید هاست - خرید دامنه,IR,42337
+01it.ir,1,commoncrawl,iranian,0.88,0.5041,صفرویک - بزرگترین فروشگاه لپ تاپ استوک,,
 9craft.ir,1,tranco,iranian,0.88,0.7086,ناین کرفت | خرید سرور ماینکرافت، تراریا و هایتل,IR,206596
 agahe118.com,0,lists,iranian,0.88,0.9905,آگهی سرای 118 | درج آگهی رایگان - تبلیغات اینترنتی - نیازمندی های کشور,IR,57497
 alphaschool.ir,1,tranco,iranian,0.88,0.6478,کلاس‌های آنلاین کنکور و امتحان نهایی یازدهم و دهم در مدرسه آلفا,IR,60631
@@ -218,6 +219,7 @@ zaadmehr.ir,1,tranco,iranian,0.88,0.8621,عطاری آنلاین زادمهر,IR
 zinoatlasco.com,0,lists,iranian,0.88,0.9491,زینو اطلس کو نمایندگی رسمی و مجاز تعمیر انواع هود،گاز،فر،ماکروویو,IR,212216
 zipan.ir,1,tranco,iranian,0.88,0.9608,قهوه زیپان | فروشگاه اینترنتی تجهیزات کافی شاپ و قهوه - قهوه زیپان,IR,43754
 tktfly.ir,1,tranco,iranian,0.8675,0.6488,بلیط هواپیما | چارتر 724,IR,205585
+024kala.ir,1,commoncrawl,iranian,0.865,0.9168,024 کالا | فروشگاه تخفیف های ویژه,,
 aaniro.ir,1,tranco,iranian,0.865,0.7059,آنی رو - پرداخت عوارض آزادراهی,IR,205585
 akord.ir,1,tranco,iranian,0.865,0.9716,آکورد، مرجع آکوردهای گیتار، نت، تبلچر، ملودی و آموزش گیتار,IR,202468
 apexgaming.ir,1,tranco,iranian,0.865,0.9447,اپکس ماین | بهترین سرور ماینکرافت بدراک در ایران,IR,212216
@@ -291,7 +293,7 @@ zhuann.ir,1,tranco,iranian,0.865,0.5653,ژوان | آشپزی، سرگرمی و 
 3pal.ir,1,tranco,iranian,0.8525,0.9957,سپال | ارائه خدمات درگاه پرداخت آنلاین,AM,202269
 sellu.ir,1,tranco,iranian,0.8525,0.9779,فروشگاه ساز رایگان فایل ، همکاری در فروش فایل | سل یو,IR,48715
 sepal.ir,1,tranco,iranian,0.8525,0.9957,سپال | ارائه خدمات درگاه پرداخت آنلاین,IR,205585
-2020i.ir,1,tranco,iranian,0.85,0.9225,صفحه اصلی - خدمات اینترنت مخابرات نتکده,IR,31549
+2020i.ir,1,commoncrawl;tranco,iranian,0.85,0.9225,صفحه اصلی - خدمات اینترنت مخابرات نتکده,IR,31549
 adverge.ir,1,tranco,iranian,0.85,0.9571,,NL,41227
 ainazstrainings.com,0,lists,iranian,0.85,0.9385,آکادمی تناسب اندام آیناز ترینینگ | مرکز تخصصی فیتنس، بدنسازی و لاغری,IR,59441
 alefshoop.ir,1,tranco,iranian,0.85,0.9913,الف شاپ,IR,212216
@@ -338,6 +340,7 @@ usywears.ir,1,tranco,iranian,0.85,0.9885,صفحه اصلی - یاسی ورز,IR,
 virgooltahrir.ir,1,tranco,iranian,0.85,0.9919,ویرگول تحریر – ویرگول تحریر، فروش انواع لوازم فانتزی,IR,212216
 yasishopp.ir,1,tranco,iranian,0.85,0.9896,یاسی شاپ,IR,212216
 zarsaland.ir,1,tranco,iranian,0.85,0.9917,زرسالند,IR,212216
+0173155.ir,1,commoncrawl,iranian,0.845,0.9528,صفحه اصلی -,,
 afrouzi.ir,1,lists,iranian,0.845,0.871,مصطفی افروزی | طراح و توسعه‌دهنده وب، سئو و تبلیغات,IR,208161
 ajansbook.ir,1,tranco,iranian,0.845,1.0,آژانس کتاب - خرید آنلاین کتاب های دانشگاهی، عمومی، درسی و کمک درسی,IR,48551
 araku.ac.ir,1,majestic;tranco,iranian,0.845,0.9702,صفحه نخست,IR,58224
@@ -385,7 +388,7 @@ tehrandarou.com,0,lists,iranian,0.845,0.7993,تهران دارو,IR,204213
 viragostarmoin.com,0,lists,iranian,0.845,0.9755,تخصصی‌ترین مرکز چاپ و گلدوزی روی انواع پارچه - ویراگستر معین,IR,212216
 zar.ir,1,tranco,iranian,0.845,0.9798,گالری طلا زر - سایت رسمی خرید آنلاین جواهر در بازار ایران,IR,57687
 gooyeboloorin.ir,1,tranco,iranian,0.8375,0.9802,گوی بلورین-انواع فال و سرگرمی و طالع بینی,AM,202269
-1st.ir,1,majestic;tranco,iranian,0.83,0.9903,فروشگاه اینترنتی تجارت اول,IR,43754
+1st.ir,1,commoncrawl;majestic;tranco,iranian,0.83,0.9903,فروشگاه اینترنتی تجارت اول,IR,43754
 abfa-bushehr.ir,1,tranco,iranian,0.83,0.9904,شرکت آب و فاضلاب استان بوشهر,IR,61173
 accessmarketing.ir,1,tranco,iranian,0.83,0.9824,اکسس مارکتینگ | برنامه نویسی و طراحی سایت فروشگاهی,IR,57687
 aghayekhoshk.ir,1,tranco,iranian,0.83,0.997,بستنی خشک آقای خشک,IR,57687
@@ -583,7 +586,9 @@ zarbaha-co.ir,1,tranco,iranian,0.83,0.4643,زربها - زربها,IR,204213
 ziriset.ir,1,tranco,iranian,0.83,0.9788,سایت لباس زیر زنانه و مردانه با خرید اقساطی | زیری ست مشهد,IR,212216
 zohastyle.ir,1,tranco,iranian,0.83,0.7891,ضحی استایل | فروش لباس های مجلسی زنانه حجاب - ضحی استایل,IR,60976
 softmenu.ir,1,tranco,iranian,0.8175,0.9857,منو دیجیتال (منو آنلاین) خود را در 2 دقیقه با سافت منو بسازید,IR,205585
-1hana.ir,1,tranco,iranian,0.815,0.9103,کوتاه کننده لینک حنا,IR,205585
+021-79165.ir,1,commoncrawl,iranian,0.815,0.9598,"اخذ گواهینامه ایزو ISO , HSE , IMS , CE فوری و ارزان رتبه انفورماتیک پیمانکاری آموزشی",,
+07132319001.ir,1,commoncrawl,iranian,0.815,0.9966,به سامانه پیامک هوشمند خوش آمدید v10.0.0,,
+1hana.ir,1,commoncrawl;tranco,iranian,0.815,0.9103,کوتاه کننده لینک حنا,IR,205585
 aamerin.ir,1,tranco,iranian,0.815,1.0,موسسه موعود – مرکز تخصصی امر به معروف و نهی از منکر,IR,205585
 adadai.ir,1,tranco,iranian,0.815,0.9973,پلتفرم هوش مصنوعی حقوقی | آداد,IR,205585
 adtrace.ir,1,tranco,iranian,0.815,0.8714,Adtrace | پلتفرم اتریبیوشن و تحلیل مارکتینگ,IR,43754
@@ -765,7 +770,7 @@ zgig.ir,1,tranco,iranian,0.815,0.9413,زدگیگ | خرید هاست دانلو�
 zire20.ir,1,tranco,iranian,0.815,0.9515,فروشگاه اینترنتی زیربیست,IR,57687
 bazaar-pay.ir,1,tranco,iranian,0.8057,0.2949,بازار پی – سرویس هوشمند پرداخت,NL,41227
 igame.ir,1,tranco,iranian,0.8025,0.9371,خرید درون بازی و برنامه، گیفت کارت و پرداخت ارزی,IR,205585
-0game.ir,1,tranco,iranian,0.8,0.7603,0GAME - دانلود بهترین بازی های قدیمی و خاطره انگیز,IR,212216
+0game.ir,1,commoncrawl;tranco,iranian,0.8,0.7603,0GAME - دانلود بهترین بازی های قدیمی و خاطره انگیز,IR,212216
 1515.ir,1,tranco,iranian,0.8,1.0,سامانه ۱۵۱۵ - درگاه ملی کارشناسی رسمی,IR,25184
 abicell.ir,1,tranco,iranian,0.8,0.9299,فروشگاه اینترنتی آبی سل | فروش انواع لوازم جانبی کامپیوتر و موبایل,IR,212216
 aframax.ir,1,tranco,iranian,0.8,0.749,بازارگاه افرامکس - بازار امن خرید و فروش کالا,IR,58262
@@ -944,10 +949,11 @@ um.ac.ir,1,majestic;tranco,iranian,0.795,0.9981,صفحه اصلی,IR,61248
 uswr.ac.ir,1,majestic;tranco,iranian,0.795,0.8608,صفحه اصلی | دانشگاه علوم توانبخشی و سلامت اجتماعی,IR,42337
 xscript.ir,1,majestic,iranian,0.795,0.9411,ایکس اسکریپت | دانلود اسکریپت,IR,60631
 nahang.ir,1,tranco,iranian,0.7825,0.9859,فروشگاه اینترنتی کتاب نهنگ,IR,57687
-0-1.ir,1,majestic;tranco,iranian,0.78,0.9791,صفرویک – خرید اینترنت، هاست، دامنه و سرور,IR,44285
-1ea.ir,1,tranco,iranian,0.78,0.9745,کوتاه کننده لینک با کسب درامد ~ کوتاه کننده آدرس فارسی ~ یکیا,IR,43754
+0-1.ir,1,commoncrawl;majestic;tranco,iranian,0.78,0.9791,صفرویک – خرید اینترنت، هاست، دامنه و سرور,IR,44285
+0100.ir,1,commoncrawl,iranian,0.78,1.0,صفرصد | سوپر اپلیکیشن صنعت ساختمان,,
+1ea.ir,1,commoncrawl;tranco,iranian,0.78,0.9745,کوتاه کننده لینک با کسب درامد ~ کوتاه کننده آدرس فارسی ~ یکیا,IR,43754
 23055.ir,1,tranco,iranian,0.78,0.9909,مرکز وکلا کارشناسان رسمی و مشاوران قوه قضائیه,IR,25184
-24nevis.ir,1,tranco,iranian,0.78,1.0,صفحه اصلی - 24 نویس,IR,212216
+24nevis.ir,1,commoncrawl;tranco,iranian,0.78,1.0,صفحه اصلی - 24 نویس,IR,212216
 7ganj.ir,1,majestic,iranian,0.78,0.8496,هفت گنج - خواص ، فواید ، سلامتی ٬ زناشویی ٬ آشپزی و سرگرمی,DE,24940
 abohavachetore.ir,1,tranco,iranian,0.78,0.9507,آب و هوا چطوره؟ | اعلام وضعیت لحظه ای آب و هوای ایران و جهان,IR,204213
 actoverco.com,0,lists,iranian,0.78,0.9349,داروسازی اکتوورکو,IR,61173
@@ -1268,6 +1274,12 @@ creditscoring.ir,1,tranco,iranian,0.7675,0.9796,اعتبار سنجی بانکی
 dabi.ir,1,tranco,iranian,0.7675,0.9916,شــهر اینترنتی تهران – بانک اطلاعات شهری ، محله ها و مراکز خرید,IR,43754
 estjt.ir,1,tranco,iranian,0.7675,0.9982,اتحادیه فروشندگان و سازندگان طلا،جواهر،نقره و سکه تهران - شبکه اطلاع رسانی طلا،جواهر،نقره و سکه,IR,57497
 vakiljo.ir,1,tranco,iranian,0.7675,0.9973,سوال از وکیل آنلاین | مشاوره حقوقی,NL,198596
+01000.ir,1,commoncrawl,iranian,0.765,1.0,صفر و یک,,
+01kar.ir,1,commoncrawl,iranian,0.765,0.9052,سایت آگهی کسب و کار ديجيتال,,
+01soft.ir,1,commoncrawl,iranian,0.765,0.9888,0 و 1,,
+0272.ir,1,commoncrawl,iranian,0.765,0.783,خرید دامنه 0272.ir | این دامنه ممکن است برای فروش باشد,,
+0280.ir,1,commoncrawl,iranian,0.765,0.783,خرید دامنه 0280.ir | این دامنه ممکن است برای فروش باشد,,
+0534.ir,1,commoncrawl,iranian,0.765,0.783,خرید دامنه 0534.ir | این دامنه ممکن است برای فروش باشد,,
 2agoo.com,0,lists,iranian,0.765,1.0,دعاگو - ادعیه و اذکار قرآنی و باستان شناسی - در این سایت مجموعه ای از بهترین ذکر و دعاهای قرآنی و ادعیه و اذکار مجرب بسیار قوی قرار داده شده است,IR,212216
 aba-music.ir,1,tranco,iranian,0.765,0.949,آبا موزیک • سایت دانلود آهنگ جدید,IR,48715
 abadis.ir,1,majestic;tranco,iranian,0.765,0.9572,دیکشنری آنلاین آبادیس - Abadis Dictionary,IR,58262
@@ -1565,6 +1577,7 @@ depoint.ir,1,tranco,iranian,0.7525,0.9196,دیپوینت,IR,51431
 memarket24.ir,1,tranco,iranian,0.7525,1.0,فروشگاه اینترنتی می‌مارکت,IR,60631
 rayteb.ir,1,tranco,iranian,0.7525,0.8696,نوبت دهي ، ويزيت آنلاين ، پرونده و نسخه نويسي الكترونيك,IR,48147
 rubika1.ir,1,tranco,iranian,0.7525,0.998,سایت رسمی خرید فالوور روبیکا | ممبر کانال روبیکا | لایک و ویو روبیکا,IR,205585
+0528shop.ir,1,commoncrawl,iranian,0.75,0.8429,maintenance &#8211; دموی اکومال,,
 70kala.ir,1,tranco,iranian,0.75,0.9623,70 کالا - فروشگاه اینترنتی 70کالا با تخفیفهای هیجان انگیز,IR,34918
 abdoperfume.ir,1,tranco,iranian,0.75,0.8674,صفحه اصلی - فروشگاه عطر عبدو,IR,51431
 abtinart.ir,1,tranco,iranian,0.75,0.9437,محصولات | لوازم هنری آبتین,IR,43754
@@ -1751,8 +1764,8 @@ webone-sms.ir,1,tranco,iranian,0.7375,0.791,پنل اس ام اس وب وان,IR
 etma.ir,1,tranco,iranian,0.7325,0.9957,صفحه اصلی | فروشگاه آنلاین اتما,AM,202269
 mycredit.ir,1,tranco,iranian,0.7325,0.9918,اعتبار سنجی بانکی اشخاص حقیقی و حقوقی | سامانه اعتبار من,IR,206065
 webzi.ir,1,majestic;tranco,iranian,0.7325,0.9915,طراحی وب سایت و ساخت سایت آنلاین | سایت ساز رایگان - وبزی,IR,60976
-141.ir,1,majestic;tranco,iranian,0.73,1.0,سامانه 141,IR,205585
-1car.ir,1,tranco,iranian,0.73,0.979,وانکار :: قیمت خودرو و اخبار خودرو,US,13335
+141.ir,1,commoncrawl;majestic;tranco,iranian,0.73,1.0,سامانه 141,IR,205585
+1car.ir,1,commoncrawl;tranco,iranian,0.73,0.979,وانکار :: قیمت خودرو و اخبار خودرو,US,13335
 724.ir,1,tranco,iranian,0.73,0.9937,سوپر اپلیکیشن 724 | همه پرداخت‌ها در یک اپ امن و سریع,IR,59441
 addressmap.ir,1,tranco,iranian,0.73,1.0,آدرس مپ | ثبت اطلاعات کسب‌ و‌ کار و مناطق,IR,43754
 aftab.club,0,lists,iranian,0.73,1.0,باشگاه گردشگری آفتاب | مرجع تفریح، گردشگری و رزرو هتل,IR,43754
@@ -1979,7 +1992,9 @@ sepahbroker.ir,1,tranco,iranian,0.7175,0.9934,شرکت کارگزاری بانک
 sinapezeshk.ir,1,tranco,iranian,0.7175,0.9984,رزرو نوبت اینترنتی دکتر ، مشاوره پزشکی و رژیم آنلاین و محصولات گیاهی - سینا پزشک,IR,57497
 taavon-ins.ir,1,tranco,iranian,0.7175,0.9923,پورتال اینترنتی بیمه تعاون:: پورتال اینترنتی بیمه تعاون ::,IR,25184
 ustmb.ac.ir,1,tranco,iranian,0.7175,0.9822,دانشگاه علوم و فنون مازندران - Mazandaran University of Science and Technology,IR,205585
-24times.ir,1,tranco,iranian,0.715,0.994,24 تایمز - مجله تفریحی,IR,48715
+00080.ir,1,commoncrawl,iranian,0.715,0.9856,بررسی امنیتی,IR,43754
+01d.ir,1,commoncrawl,iranian,0.715,0.928,صفر و یک دولوپر,,
+24times.ir,1,commoncrawl;tranco,iranian,0.715,0.994,24 تایمز - مجله تفریحی,IR,48715
 98diha.ir,1,tranco,iranian,0.715,0.9985,رینگتون 98 – دانلود آهنگ های زنگ خاص | رینگتون های برتر | دانلود آهنگ زنگ موبایل,IR,212216
 98iiia.ir,1,tranco,iranian,0.715,0.9826,دانلود pdf رمان | نودهشتیا مرجع بیش از 10000 رمان رایگان -,IR,215708
 99taghvim.ir,1,tranco,iranian,0.715,0.952,تقویم ۱۴۰۵ | تقویم 1405,IR,212216
@@ -2193,7 +2208,7 @@ zarniagoldgallery.ir,1,tranco,iranian,0.715,1.0,گالری زرنیا,IR,211703
 zibamatn.ir,1,tranco,iranian,0.715,0.9762,مرجع متن کوتاه عاشقانه، بیو غمگین، خاص، شعر و جمله زیبا | زیبا متن,IR,204213
 zums.ac.ir,1,majestic;tranco,iranian,0.715,0.9799,صفحه اصلی | دانشگاه علوم پزشکی زنجان,IR,58224
 vency.ir,1,tranco,iranian,0.7027,0.2469,ونسی: دریافت وام آنلاین و فوری بدون ضامن,IR,205585
-1da.ir,1,tranco,iranian,0.7025,0.9812,کوتاه کننده لینک | وان دا,IR,205585
+1da.ir,1,commoncrawl;tranco,iranian,0.7025,0.9812,کوتاه کننده لینک | وان دا,IR,205585
 andookhtehmellat.ir,1,tranco,iranian,0.7025,0.9696,اندوخته ملت,IR,49099
 ariandata.ir,1,tranco,iranian,0.7025,0.9815,آریان دیتا – طراحی وب‌سایت، خدمات شبکه و راهکارهای هوشمند IT,IR,57497
 bankmellat.ir,1,majestic;tranco,iranian,0.7025,0.9997,وب سایت بانک ملت,IR,43415
@@ -2210,6 +2225,11 @@ sku.ac.ir,1,majestic;tranco,iranian,0.7025,0.9972,دانشگاه شهرکرد,IR
 spotplayer.ir,1,tranco,iranian,0.7025,0.8927,,IR,43754
 theskincafe.ir,1,tranco,iranian,0.7025,0.8012,مراقبت پوست و مو - اسکین کافه,US,13335
 travianwars.ir,1,tranco,iranian,0.7025,0.9702,TRAVIAN - تراوین - بازی تراوین - تراوین اسپید,IR,43754
+00397.ir,1,commoncrawl,iranian,0.7,1.0,به زبان آدمیزاد - مهدی شریفی راد,IR,60631
+00f.ir,1,commoncrawl,iranian,0.7,1.0,پیدا,,
+01sib.ir,1,commoncrawl,iranian,0.7,0.9878,سیستم خدمات الکترونیک شهر,,
+03535.ir,1,commoncrawl,iranian,0.7,0.9194,صفحه اصلی,,
+0444.ir,1,commoncrawl,iranian,0.7,0.8886,اینترنت پارسی نت لارستان,,
 12ghadam.ir,1,tranco,iranian,0.7,0.9946,دوازده قدم-مسیر بهبودی با کارکرد قدم های دوازده گانه✔️,IR,204213
 8pic.ir,1,majestic;tranco,iranian,0.7,0.9851,آپلود رایگان عکس و فایل در آپلودسنتر هشت پیک بدون ثبت نام,IR,212296
 ablclinic.ir,1,tranco,iranian,0.7,0.9197,سامانه نوبت دهی - درمانگاه حضرت ابوالفضل (ع),IR,58224
@@ -2416,6 +2436,8 @@ rubygold.ir,1,tranco,iranian,0.68,0.9619,گالری طلا روبی خرید آ�
 yamahairan.ir,1,tranco,iranian,0.68,0.9635,یاماها ایران فروش آنلاین آلات موسیقی قیمت پیانو خرید کیبورد گیتار,IR,31549
 aanidarman.com,0,lists,iranian,0.6759,0.2596,آنی درمان – aanidarman,IR,204213
 nshn.ir,1,majestic;tranco,iranian,0.6683,0.2745,نسخه وب نقشه نشان,IR,48551
+000001.ir,1,commoncrawl,iranian,0.6675,0.9866,حسابداران نسل نو,IR,60631
+021021.ir,1,commoncrawl,iranian,0.6675,0.9903,فروشگاه اینترنتی کندو | سوپرمارکت آنلاین | سوپرمارکت اینترنتی,,
 akpsho.com,0,lists,iranian,0.6675,0.9421,نمایشگاه بین المللی و آنلاین AKP,IR,60976
 bahalmag.ir,1,tranco,iranian,0.6675,0.99,مجله اینترنتی باحال مگ Bahalmag.ir,DE,24940
 bandbaz.ir,1,tranco,iranian,0.6675,0.9848,بندباز (اصلی),IR,43754
@@ -2474,6 +2496,7 @@ irmp3.ir,1,tranco,iranian,0.645,0.9783,دانلود آهنگ جدید ایران
 samasat.ir,1,tranco,iranian,0.645,1.0,ورود به سیستم,IR,60077
 farsnews.ir,1,majestic;tranco,iranian,0.6425,0.2168,پیشخوان | اخبار ایران و جهان | خبرگزاری فارس,IR,62229
 fna.ir,1,majestic,iranian,0.6425,0.2168,پیشخوان | اخبار ایران و جهان | خبرگزاری فارس,IR,62229
+00x.ir,1,commoncrawl,iranian,0.6375,0.8929,این دامنه میتواند فروشی باشد,,
 elimag.ir,1,tranco,iranian,0.6375,1.0,الی مگ - تعبیر خواب حضرت یوسف و امام صادق و ابن سیرین,IR,48715
 elmineh.ir,1,tranco,iranian,0.6375,0.9561,Elmineh.ir - علمینه ، دنیای اطلاعات و آموزش و سرگرمی,IR,215708
 mokammelyab.com,0,lists,iranian,0.6375,0.9735,مکمل یاب|مکمل|ویتامین,IR,201999
@@ -2484,7 +2507,7 @@ sahabcard.ir,1,tranco,iranian,0.6375,1.0,سامانه سحاب,IR,50733
 sww.ir,1,tranco,iranian,0.6375,0.9955,آب و فاضلاب استان سمنان,IR,48715
 zoodex.ir,1,tranco,iranian,0.6375,1.0,زودکس | زودکس,IR,205585
 zula.ir,1,tranco,iranian,0.6375,0.8698,بازی زولا,IR,207796
-0201001.ir,1,tranco,iranian,0.6325,0.9875,صفر بیست هزار و یک,IR,49972
+0201001.ir,1,commoncrawl;tranco,iranian,0.6325,0.9875,صفر بیست هزار و یک,IR,49972
 aeoi.org.ir,1,majestic,iranian,0.6325,0.9668,صفحه اصلی | سازمان انرژی اتمی ایران,IR,58224
 bestblog.ir,1,majestic,iranian,0.6325,0.8712,بست بلاگ | وبلاگدهی فارسی | ساخت وبلاگ رایگان,IR,212216
 cbi.ir,1,majestic;tranco,iranian,0.6325,0.9978,صفحه نخست,IR,58224
@@ -2621,8 +2644,8 @@ roxanmta.ir,1,tranco,iranian,0.615,0.9808,رکسان ام تی ای - بهتری
 sinaksh.ir,1,tranco,iranian,0.615,0.9885,سامانه جامع سازمان نظام مهندسی ساختمان کرمانشاه,IR,48359
 sorenvhs.ir,1,tranco,iranian,0.6133,0.2445,وی‌اچ‌اس - پلتفرم پخش آنلاین فیلم و سریال,IR,59441
 modaresane.ir,1,tranco,iranian,0.6037,0.212,تدریس خصوصی ریاضی | معلم حرفه ای در منزل و آنلاین | مدرسانه,IR,212216
-1000264.ir,1,tranco,iranian,0.6025,0.9933,یک میلیون و دویست و شصت و چهار,DE,24940
-1architect.ir,1,tranco,iranian,0.6025,0.9721,یک آرشیتکت,IR,43754
+1000264.ir,1,commoncrawl;tranco,iranian,0.6025,0.9933,یک میلیون و دویست و شصت و چهار,DE,24940
+1architect.ir,1,commoncrawl;tranco,iranian,0.6025,0.9721,یک آرشیتکت,IR,43754
 30sc.ir,1,tranco,iranian,0.6025,0.9889,سی ثانیه,DE,24940
 33ib.ir,1,tranco,iranian,0.6025,0.9824,سه سیب,DE,24940
 4bux.ir,1,tranco,iranian,0.6025,0.9822,فور باکس,DE,24940
@@ -2749,7 +2772,11 @@ vgym.ir,1,tranco,iranian,0.6025,0.97,وی جی وای ام,DE,24940
 webahang.ir,1,tranco,iranian,0.6025,0.8534,وب آهنگ - دانلود آهنگ های جدید,IR,43754
 yagharib.ir,1,tranco,iranian,0.6025,0.9803,یا غریب,IR,43754
 yahooadd.ir,1,tranco,iranian,0.6025,0.9807,یاهو ادد,DE,24940
-1122.ir,1,tranco,iranian,0.6,0.3049,Domain For Sale - Domain Parking,IR,58262
+00098.ir,1,commoncrawl,iranian,0.6,0.9198,سه صفر 98,IR,205585
+0011.ir,1,commoncrawl,iranian,0.6,1.0,.:: دیجی کلینیک ::. تعمیرات انواع کالای دیجیتال - ورود به پنل,IR,47376
+0141.ir,1,commoncrawl,iranian,0.6,0.968,,,
+0439.ir,1,commoncrawl,iranian,0.6,0.968,,,
+0451.ir,1,commoncrawl,iranian,0.6,1.0,این دامنه واگذار میشود,,
 2020kanoon.ir,1,tranco,iranian,0.6,0.3729,سامانه 2020 - درگاه ملی کارشناسی,IR,205585
 autonovin.ir,1,tranco,iranian,0.6,0.9934,اتونوین، پلتفرم هوشمند آنلاین خرید و فروش خودرو,IR,205585
 bourse-app.ir,1,tranco,iranian,0.6,0.9798,اپلیکیشن هشتگ,IR,204213

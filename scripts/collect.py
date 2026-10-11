@@ -36,14 +36,11 @@ async def run(
     results: dict[str, set[str]] = {}
     subdomain_hosts: set[str] = set()
     for name in sources:
+        if name == "crtsh":
+            continue
         log.info("starting collector: %s", name)
         try:
-            if name == "crtsh":
-                domains, hosts = await crtsh.collect(
-                    crtsh_seeds or [], limit=crtsh_limit
-                )
-                subdomain_hosts |= hosts
-            elif name == "commoncrawl" and commoncrawl_kwargs:
+            if name == "commoncrawl" and commoncrawl_kwargs:
                 domains = await commoncrawl.collect(**commoncrawl_kwargs)
             else:
                 domains = await COLLECTORS[name]()
@@ -52,6 +49,17 @@ async def run(
             domains = set()
         log.info("collector %s returned %d domains", name, len(domains))
         results[name] = domains
+    if "crtsh" in sources:
+        seeds = crtsh.merge_seeds(crtsh_seeds or [], results)
+        log.info("starting collector: crtsh (%d seeds)", len(seeds))
+        try:
+            domains, hosts = await crtsh.collect(seeds, limit=crtsh_limit)
+            subdomain_hosts |= hosts
+        except Exception:
+            log.exception("collector failed: crtsh")
+            domains = set()
+        log.info("collector crtsh returned %d domains", len(domains))
+        results["crtsh"] = domains
     return results, subdomain_hosts
 
 

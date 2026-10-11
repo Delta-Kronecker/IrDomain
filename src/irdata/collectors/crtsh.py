@@ -58,6 +58,17 @@ async def _fetch_subdomains(client, domain: str) -> list[str] | None:
     return None
 
 
+def merge_seeds(db_seeds: list[str], results: dict[str, set[str]]) -> list[str]:
+    seeds = list(db_seeds)
+    seen = set(seeds)
+    for domains in results.values():
+        for domain in sorted(domains):
+            if domain not in seen:
+                seeds.append(domain)
+                seen.add(domain)
+    return seeds
+
+
 async def collect(
     seed_domains: list[str], limit: int = 500
 ) -> tuple[set[str], set[str]]:

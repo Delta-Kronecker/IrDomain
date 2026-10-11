@@ -1,6 +1,8 @@
+import asyncio
 import json
 import logging
 import math
+import random
 import re
 
 from irdata.utils.domain import domain_from_url
@@ -10,6 +12,8 @@ log = logging.getLogger(__name__)
 
 COLLINFO_URL = "https://index.commoncrawl.org/collinfo.json"
 INVALID_PAGE_RE = re.compile(r"Last Page is (\d+)")
+MAX_FAILURES = 8
+PAGE_SLEEP = 1.5
 
 
 def _page_plan(total: int | None, max_pages: int) -> list[int]:
@@ -55,14 +59,16 @@ async def _collect_index(client, index_id: str, max_pages: int) -> set[str]:
             failure_streak = 0
         except Exception:
             failure_streak += 1
-            if failure_streak >= 4:
+            if failure_streak >= MAX_FAILURES:
                 log.warning("%s: aborting after %d failures", index_id, failure_streak)
                 break
+            await asyncio.sleep(PAGE_SLEEP * failure_streak + random.random())
             continue
         if not text.strip():
             empty_streak += 1
             if empty_streak >= 2:
                 break
+            await asyncio.sleep(PAGE_SLEEP)
             continue
         empty_streak = 0
         added = 0
@@ -79,6 +85,7 @@ async def _collect_index(client, index_id: str, max_pages: int) -> set[str]:
                 domains.add(domain)
                 added += 1
         log.info("%s page %d: +%d (total %d)", index_id, page, added, len(domains))
+        await asyncio.sleep(PAGE_SLEEP + random.random())
     return domains
 
 
