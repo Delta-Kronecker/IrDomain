@@ -59,15 +59,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Cache raw files and database
+      - name: Cache raw files
         uses: actions/cache@v4
         with:
-          path: |
-            data/raw
-            data/irdata.sqlite
-          key: irdata-${{ github.run_id }}
+          path: data/raw
+          key: irdata-raw-${{ github.run_id }}
           restore-keys: |
-            irdata-
+            irdata-raw-
 
       - name: Collect seed domains
         env:
